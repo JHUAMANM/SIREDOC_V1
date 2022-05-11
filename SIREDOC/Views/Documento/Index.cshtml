@@ -1,0 +1,42 @@
+<div class="container">
+    <h1>Documento</h1>
+
+    <a class="btn btn-primary" href="/documento/create">Nuevo Documento</a>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Tipo</td>
+            <td>Numero</td>
+            <td>Fecha</td>
+            <td>Asunto</td>
+            <td>Entregado</td>
+            <td>Asignado</td>
+            <td>Observaciones</td>
+            <td>
+            
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Tipo</td>
+                <td>@item.Numero</td>
+                <td>@item.Fecha</td>
+                <td>@item.Asunto</td>
+                <td>@item.Entregado</td>
+                <td>@item.Asignado</td>
+                <td>@item.Observaciones</td>
+                <td>
+                    <a type="button" href="/documento/edit?id=@item.Id" class="btn btn-warning">Editar</a>
+                    <a type="button" href="/documento/delete?id=@item.Id" class="btn btn-danger">Eliminar</a>
+                  
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    Total Disponible real: @ViewBag.Total
+</div>

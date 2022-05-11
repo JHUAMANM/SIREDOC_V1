@@ -1,0 +1,40 @@
+<div class="container">
+    <h1>Efectivo Policial</h1>
+
+    <a class="btn btn-primary" href="/efectivopolicial/create">Nuevo Efectivo</a>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Apellidos</td>
+            <td>Unidad</td>
+            <td>Cip</td>
+            <td>Telefono</td>
+            <td>Correo</td>
+            <td>
+            
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+                <td>@item.Apellidos</td>
+                <td>@item.Unidad</td>
+                <td>@item.Cip</td>
+                <td>@item.Telefono</td>
+                <td>@item.Correo</td>
+                <td>
+                    <a type="button" href="/efectivopolicial/edit?id=@item.Id" class="btn btn-warning">Editar</a>
+                    <a type="button" href="/efectivopolicial/delete?id=@item.Id" class="btn btn-danger">Eliminar</a>
+                  
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    Los datos personales es información clasificada: @ViewBag.Total
+</div>

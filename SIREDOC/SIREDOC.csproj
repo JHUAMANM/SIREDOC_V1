@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Ciudadano\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ciudadano\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ciudadano\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Ciudadano\Index.cshtml" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,59 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h1>Nuevo Documento</h1>
+            <form action="/documento/edit?id=@Model.Id" method="post">
+                
+                <div class="mb-3">
+                    <label for="Tipo">Tipo Documento</label>
+                    <select class="form-select" name="Tipo" id="Tipo">
+                        <option value="">-- Seleccione un Tipo de Documento --</option>
+                        <option value="MEMORANDUM">MEMORANDUM</option>
+                        <option value="OFICIO">OFICIO</option>
+                        <option value="INFORME">INFORME</option>
+                        <option value="COMUNICACIONTELEFONICA">COMUNICACION TELEFONICA</option>
+                        <option value="ACTA">ACTA</option>
+                        <option value="DECRETO">DECRETO</option>
+                    </select>
+                     @Html.ValidationMessage("Tipo")
+                </div>  
+                    
+                <div class="mb-3">
+                    <label for="Numero">N° Documento</label>
+                    <input type="text" class="form-control" Name="Numero" id="Numero" value="@Model.Numero"/>
+                    @Html.ValidationMessage("Numero")
+                </div>
+                
+               <div class="mb-3">
+                    <label for="Asunto">Asunto</label>
+                    <input type="text" class="form-control" Name="Asunto" id="Asunto" value="@Model.Asunto"/>
+                    @Html.ValidationMessage("Asunto")
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Entregado">Entregado</label>
+                    <input type="text" class="form-control" Name="Entregado" id="Entregado" value="@Model.Entregado"/>
+                    @Html.ValidationMessage("Entregado")
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Asignado">Asignado</label>
+                    <input type="text" class="form-control" Name="Asignado" id="Asignado" value="@Model.Asignado"/>
+                    @Html.ValidationMessage("Asignado")
+                </div>
+                                
+                <div class="mb-3">
+                    <label for="Observaciones">Observaciones</label>
+                    <input type="text" class="form-control" Name="Observaciones" id="Observaciones" value="@Model.Observaciones"/>
+                    @Html.ValidationMessage("Observaciones")
+                </div>
+                
+               
+                <button class="btn btn-primary">Guardar</button>
+                <a type="button" href="/documento/index" class="btn btn-danger">Cancelar</a>
+               
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+
+<div class="container" style="color: blue;">
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h1>Registro de Efectivos</h1>
+            <form action="/efectivopolicial/create" method="post">
+                
+                <div class="mb-3">
+                    <label for="Nombre">Nombre</label>
+                    <input type="text" class="form-control" Name="Nombre" id="Nombre" value="@Model.Nombre"/>
+                    @Html.ValidationMessage("Nombre")
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Apellidos">Apellidos</label>
+                    <input type="text" class="form-control" Name="Apellidos" id="Apellidos" value="@Model.Apellidos"/>
+                    @Html.ValidationMessage("Apellidos")
+                </div>
+                
+                <div class="mb-3">
+                    
+                    <label for="UnidadId">Personal Policial</label>
+
+                    <select class="form-select" name="UnidadId" id="UnidadId">
+                        <option value="">-- Seleccione un Efectivo Policial --</option>
+                        @foreach (var item in ViewBag.Unidad)
+                        {
+                            if (item.Id == Model.EfectivoId)
+                            {
+                                <option value="@item.UnidadId" selected>@item.Nombre</option>
+                            }
+                            else
+                            {
+                                <option value="@item.UnidadId">@item.Nombre</option>
+
+                            }
+
+                        }
+                    </select>
+                    @Html.ValidationMessage("EfectivoId")
+                </div>
+                                
+
+                
+                <div class="mb-3">
+                    <label for="Cip">Cip</label>
+                    <input type="text" class="form-control" Name="Cip" id="Cip" value="@Model.Cip"/>
+                    @Html.ValidationMessage("Cip")
+                </div>
+                
+                <div class="mb-3">
+                    <label for="Telefono">Telefono</label>
+                    <input type="text" class="form-control" Name="Telefono" id="Telefono" value="@Model.Telefono"/>
+                    @Html.ValidationMessage("Telefono")
+                </div>
+                                
+                <div class="mb-3">
+                    <label for="Correo">Correo</label>
+                    <input type="text" class="form-control" Name="Correo" id="Correo" value="@Model.Correo"/>
+                    @Html.ValidationMessage("Correo")
+                </div>
+                
+                <br>
+
+                <button class="btn btn-primary">Guardar</button>
+                <a type="button" href="/efectivopolicial/index" class="btn btn-danger">Cancelar</a>
+                
+            </form>
+        </div>
+    </div>
+</div>

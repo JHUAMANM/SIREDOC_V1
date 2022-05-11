@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Unidades Policiales</h1>
+
+    <a class="btn btn-primary" href="/unidadpolicial/create">Nuevo Unidad</a>
+
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Nombre</td>
+            <td>Tipo Unidad</td>
+            <td>Direccion</td>
+            <td>Telefono</td>
+            <td>Correo</td>
+            <td>
+            
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Nombre</td>
+                <td>@item.Tipo</td>
+                <td>@item.Direccion</td>
+                <td>@item.Telefono</td>
+                <td>@item.Correo</td>
+                <td>
+                    <a type="button" href="/unidadpolicial/edit?id=@item.IdUnidad" class="btn btn-warning">Editar</a>
+                    <a type="button" href="/unidadpolicial/delete?id=@item.IdUnidad" class="btn btn-danger">Eliminar</a>
+                  
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    Total Disponible real: @ViewBag.Total
+</div>
