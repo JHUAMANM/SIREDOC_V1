@@ -29,7 +29,7 @@
     &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.DocumentoControllerTest.IndexControllerCaso01&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ff698b3_002Defc6_002D4e39_002D9ee3_002D93ba169550a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IndexControllerCaso01 #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8ff698b3_002Defc6_002D4e39_002D9ee3_002D93ba169550a0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IndexControllerCaso01 #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.DocumentoControllerTest.IndexControllerCaso01&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.EfectivoPolicialControllerTest.TestObtenerPorNombreCaso01&lt;/TestId&gt;&#xD;
@@ -39,10 +39,9 @@
     &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.EfectivoPolicialControllerTest.TestEditEfectivoCaso01&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.EfectivoPolicialControllerTest.PostEditEfectivoCaso01&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.EfectivoPolicialControllerTest.DeleteEfectivoCaso01&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.DocumentoControllerTest.DeleteDocumentoCaso&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ce8ea490_002Dcf86_002D4dad_002D8e50_002D1f964ae82dfd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="IndexControllerCaso01" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOC.Test.Controllers.DocumentoControllerTest.IndexControllerCaso01&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ce8ea490_002Dcf86_002D4dad_002D8e50_002D1f964ae82dfd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="IndexControllerCaso01" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="D:\Proyectos Rider\SIREDOC\SIREDOC.Test" Presentation="&amp;lt;SIREDOC.Test&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

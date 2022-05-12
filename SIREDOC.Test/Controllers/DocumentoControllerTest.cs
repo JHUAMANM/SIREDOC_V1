@@ -15,19 +15,22 @@ public class DocumentoControllerTest
     [Test]
     public void IndexControllerCaso01()
     {
-       /* var mockClaimsPrinvcipal = new Mock<ClaimsPrincipal>();
+       var mockClaimsPrinvcipal = new Mock<ClaimsPrincipal>();
         mockClaimsPrinvcipal.Setup(o => o.Claims).Returns(new List<Claim> { new Claim(ClaimTypes.Name, "admin") });
         
         var mockContex = new Mock<HttpContext>();
         mockContex.Setup(o => o.User).Returns(mockClaimsPrinvcipal.Object);
-
+        
+        var mockUsuarioRepo = new Mock<IUsuarioRepositorio>();
+        mockUsuarioRepo.Setup(o => o.ObtenerLoggedUser("user"));
+        
         var mockDocumentoRepositorio = new Mock<IDocumentoRepositorio>();
         mockDocumentoRepositorio.Setup(o => o.ObtenerDocumentosDeUsuario(1)).Returns(new List<Documento>
         {
             new Documento()
         });
             
-        var controller = new DocumentoController(null, mockDocumentoRepositorio.Object, null, null);
+        var controller = new DocumentoController(null, mockDocumentoRepositorio.Object, mockUsuarioRepo.Object, null);
 
         controller.ControllerContext = new ControllerContext()
         {
@@ -37,7 +40,7 @@ public class DocumentoControllerTest
         var view = (ViewResult)controller.Index();
         
         Assert.IsNotNull(view);
-        Assert.AreEqual(1, ((List<Documento>) view.Model).Count);*/
+        Assert.AreEqual(1, ((List<Documento>) view.Model).Count);
     }
 
     
@@ -48,7 +51,7 @@ public class DocumentoControllerTest
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         mockEfectivoRepositorio.Setup(o => o.ObtenerTodos()).Returns(new List<EfectivoPolicial>());
             
-        var controller = new DocumentoController(mockEfectivoRepositorio.Object, null, null);
+        var controller = new DocumentoController(mockEfectivoRepositorio.Object, null, null, null);
 
         var view = controller.Create();
         
@@ -92,7 +95,7 @@ public class DocumentoControllerTest
             Id = 1, Tipo = "Oficio", Numero = "283-2022", Asunto = "HOLA",
             Entregado = "31421205", Asignado = "31521206", Observaciones = "ATENDIDO"
         });
-        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object, null);
+        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object, null, null);
 
         var view = controller.Edit(2);
     }
@@ -104,7 +107,7 @@ public class DocumentoControllerTest
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         var mockDocumentoRepositorio = new Mock<IDocumentoRepositorio>();
         
-        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object, null);
+        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object, null, null);
 
         var view = controller.Edit(2, new Documento());
         
@@ -117,7 +120,7 @@ public class DocumentoControllerTest
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         var mockDocumentoRepositorio = new Mock<IDocumentoRepositorio>();
         
-        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object,null);
+        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object,null, null);
 
         var view = controller.Delete(2);
         

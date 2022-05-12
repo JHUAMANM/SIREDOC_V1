@@ -13,15 +13,15 @@ public class DocumentoController: Controller
 {
     private readonly IEfectivoPolicialRepositorio _efectivoPolicialRepositorio;
     private readonly IDocumentoRepositorio _documentoRepositorio;
-    //private readonly IUsuarioRepositorio _usuarioRepositorio;
+    private readonly IUsuarioRepositorio _usuarioRepositorio;
     private DbEntities _dbEntities;
 
-    public DocumentoController(IEfectivoPolicialRepositorio efectivoPolicialRepositorio, IDocumentoRepositorio documentoRepositorio, 
+    public DocumentoController(IEfectivoPolicialRepositorio efectivoPolicialRepositorio, IDocumentoRepositorio documentoRepositorio, IUsuarioRepositorio usuarioRepositorio,
        DbEntities dbEntities)
     {
         _efectivoPolicialRepositorio = efectivoPolicialRepositorio;
         _documentoRepositorio = documentoRepositorio;
-        //_usuarioRepositorio = usuarioRepositorio;
+        _usuarioRepositorio = usuarioRepositorio;
         _dbEntities = dbEntities;
     }
     
@@ -29,11 +29,10 @@ public class DocumentoController: Controller
     public IActionResult Index()
     {
         var usuario = GetLoggedUser();
-        var documentos = _dbEntities.Documentos
-        //var documentos = _documentoRepositorio.ObtenerDocumentosDeUsuario(usuario.Id);
-            .Include(o => o.EfectivoPolicial)
-            .Where(o => o.UsuarioId == usuario.Id).ToList();
+        //var documentos = _dbEntities.Documentos
+        var documentos = _documentoRepositorio.ObtenerDocumentosDeUsuario(usuario.Id);
         ViewBag.Total = documentos.Any() ? documentos.Sum(o => o.UsuarioId) : 0; 
+        
         return View(documentos);
     }
     
@@ -111,7 +110,8 @@ public class DocumentoController: Controller
     {
         var claim = HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name);
         var username = claim.Value;
-        return _dbEntities.Usuarios.First(o => o.Username == username);
+        //return _dbEntities.Usuarios.First(o => o.Username == username);
+       return _usuarioRepositorio.ObtenerLoggedUser(username);
 
     }
 }

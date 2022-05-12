@@ -6,7 +6,7 @@ namespace SIREDOC.Repositories;
 
 public interface IUsuarioRepositorio
 {
-    Usuario ObtenerLoggedUser();
+    Usuario ObtenerLoggedUser(string username);
 }
 public class UsuarioRepositorio: IUsuarioRepositorio
 {
@@ -18,12 +18,9 @@ public class UsuarioRepositorio: IUsuarioRepositorio
         _dbEntities = dbEntities;
     }
 
-    public Usuario ObtenerLoggedUser()
+    public Usuario ObtenerLoggedUser(string username)
     {
-        
-        /*var claim = HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name);
-        var username = claim.Value;
-        return _dbEntities.Usuarios.First(o => o.Username == username);*/
-        return new Usuario();
+        return _dbEntities.Usuarios.First(o => o.Username == username);
+       
     }
 }
