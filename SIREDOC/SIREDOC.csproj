@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="bootstrap" Version="5.0.0" />
       <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.3" />
       <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.3" />
     </ItemGroup>
@@ -16,6 +17,10 @@
       <_ContentIncludedByDefault Remove="Views\Ciudadano\Delete.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Ciudadano\Edit.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Ciudadano\Index.cshtml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Uploads" />
     </ItemGroup>
 
 </Project>

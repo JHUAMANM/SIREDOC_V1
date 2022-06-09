@@ -11,5 +11,9 @@ public class EfectivoPolicialMapping: IEntityTypeConfiguration<EfectivoPolicial>
     {
         builder.ToTable("EfectivoPolicial", "dbo");
         builder.HasKey(o => o.Id);
+
+        builder.HasOne(o => o.UnidadPolicial)
+            .WithMany()
+            .HasForeignKey(o => o.UnidadId);
     }
 }

@@ -12,6 +12,7 @@ public class DbEntities: DbContext
     public virtual DbSet<UnidadPolicial> UnidadPolicials { get; set; }
     public virtual DbSet<Usuario> Usuarios { get; set; }
 
+    public DbEntities() { }
     public DbEntities(DbContextOptions<DbEntities> options) : base(options){ }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -1,5 +1,5 @@
-<div class="container">
-    <h1>Unidades Policiales</h1>
+<div class="container" style="background: white">
+    <h1 id="UnidadesIndex">Listado de Unidades Policiales</h1>
 
     <a class="btn btn-primary" href="/unidadpolicial/create">Nuevo Unidad</a>
 
@@ -26,8 +26,8 @@
                 <td>@item.Telefono</td>
                 <td>@item.Correo</td>
                 <td>
-                    <a type="button" href="/unidadpolicial/edit?id=@item.IdUnidad" class="btn btn-warning">Editar</a>
-                    <a type="button" href="/unidadpolicial/delete?id=@item.IdUnidad" class="btn btn-danger">Eliminar</a>
+                    <a type="button" href="/unidadpolicial/edit?id=@item.IdUnidad" class="btn btn-warning btn-sm">Editar</a>
+                    <a type="button" href="/unidadpolicial/delete?id=@item.IdUnidad" class="btn btn-danger btn-sm">Eliminar</a>
                   
                 </td>
             </tr>

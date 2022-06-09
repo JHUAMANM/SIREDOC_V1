@@ -23,6 +23,7 @@ builder.Services.AddDbContext<DbEntities>(
 
 builder.Services.AddTransient<IEfectivoPolicialRepositorio, EfectiPolicialRepositorio>();
 builder.Services.AddTransient<IDocumentoRepositorio, DocumentoRepositorio>();
+builder.Services.AddTransient<IUnidadPolicialRepositorio, UnidadPolicialRepositorio>();
 builder.Services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
 
 var app = builder.Build();

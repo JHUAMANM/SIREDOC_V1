@@ -1,59 +1,95 @@
 
-<div class="container">
+<div class="container" style="color: yellow">
     <div class="row">
         <div class="col-6 offset-3">
-            <h1>Nuevo Documento</h1>
+            <div>
+                <img src="/img/pnpactual.png" width="100" class="mx-auto d-block"/>
+            </div>
+            <h2>Nuevo Documento</h2>
             <form action="/documento/create" method="post">
                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Tipo">Tipo Documento</label>
                     <select class="form-select" name="Tipo" id="Tipo">
                         <option value="">-- Seleccione un Tipo de Documento --</option>
                         <option value="MEMORANDUM">MEMORANDUM</option>
                         <option value="OFICIO">OFICIO</option>
                         <option value="INFORME">INFORME</option>
-                        <option value="COMUNICACIONTELEFONICA">COMUNICACION TELEFONICA</option>
+                        <option value="COMUNICACION TELEFONICA">COMUNICACION TELEFONICA</option>
                         <option value="ACTA">ACTA</option>
                         <option value="DECRETO">DECRETO</option>
                     </select>
                      @Html.ValidationMessage("Tipo")
                 </div>  
                     
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Numero">N° Documento</label>
                     <input type="text" class="form-control" Name="Numero" id="Numero" value="@Model.Numero"/>
                     @Html.ValidationMessage("Numero")
                 </div>
                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Fecha">Fecha</label>
                     <input type="datetime-local" class="form-control" Name="Fecha" id="Fecha" value="@Model.Fecha"/>
                     @Html.ValidationMessage("Fecha")
                 </div>
                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Asunto">Asunto</label>
                     <input type="text" class="form-control" Name="Asunto" id="Asunto" value="@Model.Asunto"/>
                     @Html.ValidationMessage("Asunto")
                 </div>
-                
-                <div class="mb-3">
-                    <label for="Entregado">Entregado</label>
-                    <input type="text" class="form-control" Name="Entregado" id="Entregado" value="@Model.Entregado"/>
-                    @Html.ValidationMessage("Entregado")
-                </div>
-                
-                <div class="mb-3">
+
+                <div class="row-mb-3">
                     <label for="Asignado">Asignado</label>
-                    <input type="text" class="form-control" Name="Asignado" id="Asignado" value="@Model.Asignado"/>
+                    <select class="form-select" name="Asignado" id="Asignado">
+                        <option value="">-- Seleccione un Efectivo --</option>
+                        <option value="ARRIBASPLATA">ARRIBASPLATA</option>
+                        <option value="POMATANTA">POMATANTA</option>
+                        <option value="TERAN">TERAN</option>
+                        <option value="VILLAR">VILLAR</option>
+                        <option value="HUAMAN">HUAMAN</option>
+                        <option value="GUILLEN">GUILLEN</option>
+                        <option value="DIAZ">DIAZ</option>
+                        <option value="AVILA">AVILA</option>
+                    </select>
                     @Html.ValidationMessage("Asignado")
+                </div>  
+                
+                <div class="row-mb-3">
+                    <label for="Archivo">Archivo</label>
+                    <input type="file" class="form-control" Name="Archivo" id="Archivo" value=""/>
+                    @Html.ValidationMessage("Archivo")
                 </div>
                                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Observaciones">Observaciones</label>
                     <input type="text" class="form-control" Name="Observaciones" id="Observaciones" value="@Model.Observaciones"/>
                     @Html.ValidationMessage("Observaciones")
                 </div>
+                
+                <div class="row-mb-3">
+                    <label for="EfectivoId">Entregado Por</label>
+
+                    <select class="form-select" name="EfectivoId" id="EfectivoId">
+                        <option value="">-- Seleccione un Efectivo Policial --</option>
+                        @foreach (var item in ViewBag.Policia)
+                        {
+                            if (item.Id == Model.EfectivoId)
+                            {
+                                <option value="@item.Id" selected>@item.Nombre</option>
+                            }
+                            else
+                            {
+                                <option value="@item.Id">@item.Nombre</option>
+
+                            }
+
+                        }
+                    </select>
+                    @Html.ValidationMessage("EfectivoId")
+                </div>
+                                
                 
                 <br>
 

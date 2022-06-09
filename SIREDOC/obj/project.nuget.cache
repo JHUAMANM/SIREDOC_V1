@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+FRef6EX7CNrLGDI6V9VrRTButPN8TPvQsZybgN7H548rqHZzVbMc1lSTRA6L+34sy9OxM5xY84qXMPV8oZghw==",
+  "dgSpecHash": "tGw4KcsTBdVPtZcMMIW59A/DwSipAH/RAKzzRame6oy0vIKgHKQZNuJ3pELJONjxmrWjw8zKpsuHcD31R0qrtQ==",
   "success": true,
   "projectFilePath": "D:\\Proyectos Rider\\SIREDOC\\SIREDOC\\SIREDOC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\YoelitoHM\\.nuget\\packages\\bootstrap\\5.0.0\\bootstrap.5.0.0.nupkg.sha512",
     "C:\\Users\\YoelitoHM\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\YoelitoHM\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\YoelitoHM\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",

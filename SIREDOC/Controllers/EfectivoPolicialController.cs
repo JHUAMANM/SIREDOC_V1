@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SIREDOC.DB;
@@ -6,31 +7,36 @@ using SIREDOC.Repositories;
 
 namespace SIREDOC.Controllers;
 
+[Authorize]
 public class EfectivoPolicialController : Controller
 {
     private readonly IEfectivoPolicialRepositorio _efectivoPolicialRepositorio;
+    private readonly IUnidadPolicialRepositorio _unidadPolicialRepositorio;
     private DbEntities _dbEntities;
 
-    public EfectivoPolicialController(IEfectivoPolicialRepositorio efectivoPolicialRepositorio, DbEntities dbEntities)
+    public EfectivoPolicialController(IEfectivoPolicialRepositorio efectivoPolicialRepositorio, IUnidadPolicialRepositorio unidadPolicialRepositorio, DbEntities dbEntities)
     {
         _efectivoPolicialRepositorio = efectivoPolicialRepositorio;
+        _unidadPolicialRepositorio = unidadPolicialRepositorio;
         _dbEntities = dbEntities;
     }
     [HttpGet]
     public IActionResult Index()
     {
+
         
         //var items = _dbEntities.EfectivoPolicials.Where(o => o.Id == o.Id).ToList();
         
-        var items = _efectivoPolicialRepositorio.ObtenerTodos();
+        //var items = _efectivoPolicialRepositorio.ObtenerTodos();
+        var unidades = _efectivoPolicialRepositorio.ObtenerEfectivosTodos();
         
-        return View(items);
+        return View(unidades);
     }
     
     [HttpGet]
     public IActionResult Create()
     {
-        ViewBag.Policia = _efectivoPolicialRepositorio.ObtenerTodos();
+        ViewBag.Unidad = _unidadPolicialRepositorio.ObtenerTodos();
         return View(new EfectivoPolicial());
     }
     
@@ -38,12 +44,24 @@ public class EfectivoPolicialController : Controller
     public IActionResult Create(EfectivoPolicial efectivos)
     {
 
-        // efectivos.Id = efectivos.Id;
+         
         // _dbEntities.EfectivoPolicials.Add(efectivos);
         // _dbEntities.SaveChanges();
         
-        _efectivoPolicialRepositorio.GuardarEfectivo(efectivos);
+        if (efectivos.UnidadId > 6 || efectivos.UnidadId < 1)
+        {
+            ModelState.AddModelError("UnidadId", "La unidad policial no existe");
+        }
 
+        if (!ModelState.IsValid)
+        {
+            // ViewBag.Policia = _dbEntities.EfectivoPolicials.ToList();
+            ViewBag.Unidad = _unidadPolicialRepositorio.ObtenerTodos();
+            return View("Create", efectivos);
+        }
+
+        _efectivoPolicialRepositorio.GuardarEfectivo(efectivos);
+        
         return RedirectToAction("Index");
     }
     
@@ -54,7 +72,7 @@ public class EfectivoPolicialController : Controller
         // ViewBag.Policia = _dbEntities.EfectivoPolicials.ToList();
 
         var efectivo = _efectivoPolicialRepositorio.ObtenerEfectivoPorId(id);
-        ViewBag.Policia = _efectivoPolicialRepositorio.ObtenerTodos();
+        ViewBag.Unidad = _unidadPolicialRepositorio.ObtenerTodos();
         return View(efectivo);
     }
     
@@ -62,7 +80,7 @@ public class EfectivoPolicialController : Controller
     public IActionResult Edit(int id, EfectivoPolicial efectivos)
     {
         if (!ModelState.IsValid) {
-            ViewBag.Persona = _dbEntities.EfectivoPolicials.ToList();
+            ViewBag.Persona = _dbEntities.UnidadPolicials.ToList();
             return View("Edit", efectivos);
         }
         // var efectivoDB = _dbEntities.EfectivoPolicials.First(o => o.Id == id);

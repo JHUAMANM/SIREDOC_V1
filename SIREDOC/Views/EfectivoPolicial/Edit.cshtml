@@ -1,41 +1,57 @@
 
-<div class="container">
-    <div class="row">
+<div class="container" style="color: yellow">
+    <div class="row-mb-3">
         <div class="col-6 offset-3">
-            <h1>Nuevo Efectivo</h1>
+            <h2>Nuevo Efectivo</h2>
             <form action="/efectivopolicial/edit?id=@Model.Id" method="post">
                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Nombre">Nombre</label>
                     <input type="text" class="form-control" Name="Nombre" id="Nombre" value="@Model.Nombre"/>
                     @Html.ValidationMessage("Nombre")
                 </div>
                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Apellidos">Apellidos</label>
                     <input type="text" class="form-control" Name="Apellidos" id="Apellidos" value="@Model.Apellidos"/>
                     @Html.ValidationMessage("Apellidos")
                 </div>
                 
-                <div class="mb-3">
-                    <label for="Unidad">Unidad</label>
-                    <input type="text" class="form-control" Name="Unidad" id="Unidad" value="@Model.Unidad"/>
-                    @Html.ValidationMessage("Unidad")
+                <div class="row-mb-3">
+
+                    <label for="UnidadId">Unidad</label>
+
+                    <select class="form-select" name="UnidadId" id="UnidadId">
+                        <option value="">-- Seleccione una Unidad Policial --</option>
+                        @foreach (var item in ViewBag.Unidad)
+                        {
+                            if (item.IdUnidad == Model.UnidadId)
+                            {
+                                <option value="@item.IdUnidad" selected>@item.Nombre</option>
+                            }
+                            else
+                            {
+                                <option value="@item.IdUnidad">@item.Nombre</option>
+
+                            }
+
+                        }
+                    </select>
+                    @Html.ValidationMessage("UnidadId")
                 </div>
-                
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Cip">Cip</label>
                     <input type="text" class="form-control" Name="Cip" id="Cip" value="@Model.Cip"/>
                     @Html.ValidationMessage("Cip")
                 </div>
                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Telefono">Telefono</label>
                     <input type="text" class="form-control" Name="Telefono" id="Telefono" value="@Model.Telefono"/>
                     @Html.ValidationMessage("Telefono")
                 </div>
                                 
-                <div class="mb-3">
+                <div class="row-mb-3">
                     <label for="Correo">Correo</label>
                     <input type="text" class="form-control" Name="Correo" id="Correo" value="@Model.Correo"/>
                     @Html.ValidationMessage("Correo")
