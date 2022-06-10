@@ -16,17 +16,17 @@ public class EfectivoPolicial
     public int UnidadId { get; set; }
     
     [Required(ErrorMessage = "Ingrese el cip del efectivo")]
-    //[RegularExpression(@"^[0-9]{8}-[0-9]{1}$", ErrorMessage = "Ingrese un cip valido")]
+    [RegularExpression("(^[0-9]+$)", ErrorMessage = "Solo se permiten números")]
+    [StringLength(8, MinimumLength = 1, ErrorMessage = "El cip tendra una longitud de 8 digitos")]
     public string Cip { get; set; }
     
     [Required(ErrorMessage = "Ingrese el telefono del efectivo")]
-    //[RegularExpression("^[0-9]{9}-[0-9]{1}$", ErrorMessage = "Escriba un telefono valido")]
+    [RegularExpression("(^[0-9]+$)", ErrorMessage = "Solo se permiten números")]
+    [StringLength(9, MinimumLength = 1, ErrorMessage = "El telefono tendra una longitud de 9 digitos")]
     public string Telefono { get; set; }
     
     [Required(ErrorMessage = "Ingrese el correo del efectivo")]
     [EmailAddress(ErrorMessage = "Escriba un correo valido")]
-    //[RegularExpression(@"^[a-zA-Z0-9_+-]+@[a-zA-Z0-9-]+\-[a-zA-Z0-9-.]+$",ErrorMessage="Formato incorrecto")]
-
     public string Correo { get; set; }
 
     public UnidadPolicial? UnidadPolicial { get; set; }
