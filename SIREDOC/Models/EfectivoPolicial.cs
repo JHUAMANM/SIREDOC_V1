@@ -7,10 +7,12 @@ public class EfectivoPolicial
     public int Id { get; set; }
     
     [Required(ErrorMessage = "Ingrese el nombre del efectivo")]
+    [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$", ErrorMessage = "Debe ingresar solo letras")]
     [MaxLength(50, ErrorMessage = "Debe ingresar 50 caracteres como max")]
     public string Nombre { get; set; }
     
     [Required(ErrorMessage = "Ingrese los apellidos del efectivo")]
+    [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$", ErrorMessage = "Debe ingresar solo letras")]
     [MaxLength(80, ErrorMessage = "Debe ingresar 80 caracteres como max")]
     public string Apellidos { get; set; }
     public int UnidadId { get; set; }

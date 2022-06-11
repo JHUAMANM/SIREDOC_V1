@@ -18,6 +18,8 @@ public class Documento
     public DateTime Fecha { get; set; }
     
     [Required(ErrorMessage = "Ingrese el asunto del documento")]
+    [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$", ErrorMessage = "Debe ingresar solo letras y números")]
+    [MaxLength(100, ErrorMessage = "Ingrese un maximo de 100 caracteres")]
     public string Asunto { get; set; }
     
     [Required(ErrorMessage = "Elija un efectivo de documento")]
@@ -27,6 +29,7 @@ public class Documento
     public string Archivo { get; set; }
     
     [Required(ErrorMessage = "Ingrese las observaciones")]
+    [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$", ErrorMessage = "Debe ingresar solo letras y números")]
     [MaxLength(80, ErrorMessage = "Escriba un maximo de 80 caracteres")]
     public string Observaciones { get; set; }
     public int Estado { get; set; }
