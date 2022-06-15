@@ -1,0 +1,20 @@
+﻿D:\Proyectos Rider\SIREDOC\SIREDOCTest\Controllers\DocumentoControllerTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Controllers\EfectivoPolicialControllerTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Controllers\HomeControllerTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Controllers\UnidadPolicialControllerTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Helpers\MockDBSet.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Repositories\DocumentoRepositorioTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Repositories\EfectivoPolicialRepositorioTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Repositories\UnidadPolicialRepositorioTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\Repositories\UsuarioRepositorioTest.cs
+D:\Proyectos Rider\SIREDOC\SIREDOCTest\UnitTest1.cs
+C:\Users\YoelitoHM\.nuget\packages\microsoft.net.test.sdk\16.11.0\build\netcoreapp2.1\Microsoft.NET.Test.Sdk.Program.cs
+C:\Users\YoelitoHM\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\testhost.exe
+C:\Users\YoelitoHM\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\testhost.dll
+C:\Users\YoelitoHM\.nuget\packages\microsoft.testplatform.testhost\16.11.0\build\netcoreapp2.1\x64\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\YoelitoHM\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\NUnit3.TestAdapter.dll
+C:\Users\YoelitoHM\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\NUnit3.TestAdapter.pdb
+C:\Users\YoelitoHM\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\nunit.engine.dll
+C:\Users\YoelitoHM\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\nunit.engine.api.dll
+C:\Users\YoelitoHM\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\nunit.engine.core.dll
+C:\Users\YoelitoHM\.nuget\packages\nunit3testadapter\4.0.0\build\netcoreapp2.1\testcentric.engine.metadata.dll

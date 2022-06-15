@@ -1,0 +1,4127 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.2.0.0",
+        "fileVersion": "4.2.0-4.22220.2 (1e40aa11)",
+        "semanticVersion": "4.2.0",
+        "language": "es-MX"
+      },
+      "results": [
+        {
+          "ruleId": "CS4014",
+          "level": "warning",
+          "message": "Como esta llamada no es 'awaited', la ejecución del método actual continuará antes de que se complete la llamada. Puede aplicar el operador 'await' al resultado de la llamada.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 56,
+                  "startColumn": 9,
+                  "endLine": 56,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Username\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Usuario.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Usuario.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Password\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Usuario.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 19,
+                  "endLine": 11,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Usuario.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 19,
+                  "endLine": 11,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Nombre\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 19,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 19,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Tipo\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 19,
+                  "endLine": 17,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 19,
+                  "endLine": 17,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Direccion\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 19,
+                  "endLine": 22,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 19,
+                  "endLine": 22,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Telefono\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 19,
+                  "endLine": 27,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 19,
+                  "endLine": 27,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Correo\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 19,
+                  "endLine": 30,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/UnidadPolicial.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 19,
+                  "endLine": 30,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Nombre\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 19,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 19,
+                  "endLine": 12,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Apellidos\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 19,
+                  "endLine": 17,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 19,
+                  "endLine": 17,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Cip\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 19,
+                  "endLine": 23,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 19,
+                  "endLine": 23,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Telefono\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 19,
+                  "endLine": 28,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 19,
+                  "endLine": 28,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Correo\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 19,
+                  "endLine": 32,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/EfectivoPolicial.cs",
+                "region": {
+                  "startLine": 32,
+                  "startColumn": 19,
+                  "endLine": 32,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Tipo\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 19,
+                  "endLine": 10,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 19,
+                  "endLine": 10,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Numero\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 19,
+                  "endLine": 14,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 19,
+                  "endLine": 14,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Asunto\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 19,
+                  "endLine": 23,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 19,
+                  "endLine": 23,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Asignado\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 19,
+                  "endLine": 26,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 19,
+                  "endLine": 26,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Archivo\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 19,
+                  "endLine": 29,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 19,
+                  "endLine": 29,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Observaciones\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 19,
+                  "endLine": 34,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Models/Documento.cs",
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 19,
+                  "endLine": 34,
+                  "endColumn": 32
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 152,
+                  "startColumn": 24,
+                  "endLine": 152,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Documentos\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 12,
+                  "endLine": 15,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 37,
+                  "endLine": 9,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"EfectivoPolicials\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 12,
+                  "endLine": 15,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 44,
+                  "endLine": 10,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"UnidadPolicials\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 12,
+                  "endLine": 15,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 42,
+                  "endLine": 12,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Usuarios\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 12,
+                  "endLine": 15,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 35,
+                  "endLine": 13,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Documentos\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 12,
+                  "endLine": 16,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 37,
+                  "endLine": 9,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"EfectivoPolicials\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 12,
+                  "endLine": 16,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 44,
+                  "endLine": 10,
+                  "endColumn": 61
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"UnidadPolicials\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 12,
+                  "endLine": 16,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 42,
+                  "endLine": 12,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento propiedad \"Usuarios\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento propiedad como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 12,
+                  "endLine": 16,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 35,
+                  "endLine": 13,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Repositories/DocumentoRepositorio.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 9,
+                  "endLine": 88,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Auth_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 234,
+                  "endLine": 72,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Auth_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 238,
+                  "endLine": 116,
+                  "endColumn": 240
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Repositories/DocumentoRepositorio.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 9,
+                  "endLine": 102,
+                  "endColumn": 18
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 158,
+                  "startColumn": 36,
+                  "endLine": 158,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 234,
+                  "endLine": 70,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 234,
+                  "endLine": 84,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 234,
+                  "endLine": 70,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 234,
+                  "endLine": 84,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 67,
+                  "endLine": 43,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 240,
+                  "endLine": 119,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 240,
+                  "endLine": 146,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 190,
+                  "startColumn": 241,
+                  "endLine": 190,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Entidad_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 102,
+                  "startColumn": 240,
+                  "endLine": 102,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 129,
+                  "startColumn": 240,
+                  "endLine": 129,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 241,
+                  "endLine": 173,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Entidad_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Entidad_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Entidad_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Privacy_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 234,
+                  "endLine": 104,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 119,
+                  "startColumn": 241,
+                  "endLine": 119,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 233,
+                  "endLine": 133,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 148,
+                  "startColumn": 233,
+                  "endLine": 148,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 174,
+                  "startColumn": 233,
+                  "endLine": 174,
+                  "endColumn": 235
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 232,
+                  "startColumn": 236,
+                  "endLine": 232,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 253,
+                  "startColumn": 236,
+                  "endLine": 253,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 274,
+                  "startColumn": 236,
+                  "endLine": 274,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 236,
+                  "endLine": 295,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 316,
+                  "startColumn": 236,
+                  "endLine": 316,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 349,
+                  "startColumn": 236,
+                  "endLine": 349,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 371,
+                  "startColumn": 236,
+                  "endLine": 371,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 411,
+                  "startColumn": 236,
+                  "endLine": 411,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 432,
+                  "startColumn": 241,
+                  "endLine": 432,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 446,
+                  "startColumn": 241,
+                  "endLine": 446,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 460,
+                  "startColumn": 241,
+                  "endLine": 460,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Home_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared_Error_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 236,
+                  "endLine": 61,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 75,
+                  "startColumn": 236,
+                  "endLine": 75,
+                  "endColumn": 238
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 234,
+                  "endLine": 70,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 70,
+                  "startColumn": 234,
+                  "endLine": 70,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 234,
+                  "endLine": 84,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 89,
+                  "startColumn": 240,
+                  "endLine": 89,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 105,
+                  "startColumn": 241,
+                  "endLine": 105,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 121,
+                  "startColumn": 241,
+                  "endLine": 121,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 241,
+                  "endLine": 137,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 241,
+                  "endLine": 153,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 169,
+                  "startColumn": 241,
+                  "endLine": 169,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 185,
+                  "startColumn": 241,
+                  "endLine": 185,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 263,
+                  "startColumn": 241,
+                  "endLine": 263,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 279,
+                  "startColumn": 241,
+                  "endLine": 279,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 241,
+                  "endLine": 295,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 311,
+                  "startColumn": 241,
+                  "endLine": 311,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 327,
+                  "startColumn": 241,
+                  "endLine": 327,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 343,
+                  "startColumn": 241,
+                  "endLine": 343,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 359,
+                  "startColumn": 241,
+                  "endLine": 359,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 375,
+                  "startColumn": 241,
+                  "endLine": 375,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 391,
+                  "startColumn": 241,
+                  "endLine": 391,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 456,
+                  "startColumn": 241,
+                  "endLine": 456,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 483,
+                  "startColumn": 241,
+                  "endLine": 483,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 527,
+                  "startColumn": 241,
+                  "endLine": 527,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 234,
+                  "endLine": 62,
+                  "endColumn": 236
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewImports_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views__ViewStart_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Index_cshtml.g.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 67,
+                  "endLine": 36,
+                  "endColumn": 79
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 240,
+                  "endLine": 80,
+                  "endColumn": 242
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 241,
+                  "endLine": 96,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 112,
+                  "startColumn": 241,
+                  "endLine": 112,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 241,
+                  "endLine": 128,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 241,
+                  "endLine": 144,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 160,
+                  "startColumn": 241,
+                  "endLine": 160,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 176,
+                  "startColumn": 241,
+                  "endLine": 176,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 254,
+                  "startColumn": 241,
+                  "endLine": 254,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 270,
+                  "startColumn": 241,
+                  "endLine": 270,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 286,
+                  "startColumn": 241,
+                  "endLine": 286,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 302,
+                  "startColumn": 241,
+                  "endLine": 302,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 318,
+                  "startColumn": 241,
+                  "endLine": 318,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 334,
+                  "startColumn": 241,
+                  "endLine": 334,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 350,
+                  "startColumn": 241,
+                  "endLine": 350,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 366,
+                  "startColumn": 241,
+                  "endLine": 366,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 382,
+                  "startColumn": 241,
+                  "endLine": 382,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 454,
+                  "startColumn": 241,
+                  "endLine": 454,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 481,
+                  "startColumn": 241,
+                  "endLine": 481,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica. Puede usar el operador 'await' para esperar llamadas API que no sean de bloqueo o 'await Task.Run(...)' para hacer tareas enlazadas a la CPU en un subproceso en segundo plano.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 525,
+                  "startColumn": 241,
+                  "endLine": 525,
+                  "endColumn": 243
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_EfectivoPolicial_Delete.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_EfectivoPolicial_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 24,
+                  "endLine": 41,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Shared__Layout.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__Layout_cshtml.g.cs",
+                "region": {
+                  "startLine": 63,
+                  "startColumn": 24,
+                  "endLine": 63,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_UnidadPolicial_Delete.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 24,
+                  "endLine": 41,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Auth_Login.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Auth_Login_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 24,
+                  "endLine": 43,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_UnidadPolicial_Create.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Create_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 24,
+                  "endLine": 43,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Documento_Delete.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Documento_Delete_cshtml.g.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 24,
+                  "endLine": 41,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_UnidadPolicial_Edit.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_UnidadPolicial_Edit_cshtml.g.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 24,
+                  "endLine": 42,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "CS0169",
+          "level": "warning",
+          "message": "El campo 'Views_Shared__ValidationScriptsPartial.__tagHelperStringValueBuffer' nunca se usa",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "Microsoft.NET.Sdk.Razor.SourceGenerators/Microsoft.NET.Sdk.Razor.SourceGenerators.RazorSourceGenerator/Views_Shared__ValidationScriptsPartial_cshtml.g.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 24,
+                  "endLine": 43,
+                  "endColumn": 52
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 3
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 41,
+                  "startColumn": 9,
+                  "endLine": 41,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 67,
+                  "startColumn": 12,
+                  "endLine": 67,
+                  "endColumn": 72
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 13,
+                  "endLine": 69,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 9,
+                  "endLine": 76,
+                  "endColumn": 49
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 103,
+                  "startColumn": 9,
+                  "endLine": 103,
+                  "endColumn": 76
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 115,
+                  "startColumn": 9,
+                  "endLine": 115,
+                  "endColumn": 76
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 9,
+                  "endLine": 132,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 144,
+                  "startColumn": 9,
+                  "endLine": 144,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 153,
+                  "startColumn": 9,
+                  "endLine": 153,
+                  "endColumn": 74
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 163,
+                  "startColumn": 7,
+                  "endLine": 163,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 173,
+                  "startColumn": 8,
+                  "endLine": 173,
+                  "endColumn": 95
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/EfectivoPolicialController.cs",
+                "region": {
+                  "startLine": 28,
+                  "startColumn": 9,
+                  "endLine": 28,
+                  "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/EfectivoPolicialController.cs",
+                "region": {
+                  "startLine": 48,
+                  "startColumn": 9,
+                  "endLine": 48,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/EfectivoPolicialController.cs",
+                "region": {
+                  "startLine": 58,
+                  "startColumn": 13,
+                  "endLine": 58,
+                  "endColumn": 73
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/EfectivoPolicialController.cs",
+                "region": {
+                  "startLine": 71,
+                  "startColumn": 9,
+                  "endLine": 71,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/EfectivoPolicialController.cs",
+                "region": {
+                  "startLine": 86,
+                  "startColumn": 9,
+                  "endLine": 86,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/EfectivoPolicialController.cs",
+                "region": {
+                  "startLine": 100,
+                  "startColumn": 9,
+                  "endLine": 100,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/HomeController.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 5,
+                  "endLine": 9,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/UnidadPolicialController.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 9,
+                  "endLine": 21,
+                  "endColumn": 97
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/UnidadPolicialController.cs",
+                "region": {
+                  "startLine": 30,
+                  "startColumn": 9,
+                  "endLine": 30,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/UnidadPolicialController.cs",
+                "region": {
+                  "startLine": 44,
+                  "startColumn": 9,
+                  "endLine": 44,
+                  "endColumn": 50
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/UnidadPolicialController.cs",
+                "region": {
+                  "startLine": 57,
+                  "startColumn": 9,
+                  "endLine": 57,
+                  "endColumn": 82
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/UnidadPolicialController.cs",
+                "region": {
+                  "startLine": 73,
+                  "startColumn": 9,
+                  "endLine": 73,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/UnidadPolicialController.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 9,
+                  "endLine": 87,
+                  "endColumn": 84
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/DB/DbEntities.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 5,
+                  "endLine": 29,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Constantes/ESTADO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'ESTADO' to match pascal case naming rules, consider using 'Estado'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Constantes/ESTADO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 14,
+                  "endLine": 3,
+                  "endColumn": 20
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 24,
+                  "endLine": 21,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/AuthController.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 24,
+                  "endLine": 12,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Repositories/DocumentoRepositorio.cs",
+                "region": {
+                  "startLine": 31,
+                  "startColumn": 24,
+                  "endLine": 31,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/EfectivoPolicialController.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 24,
+                  "endLine": 15,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Repositories/EfectiPolicialRepositorio.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 24,
+                  "endLine": 22,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/UnidadPolicialController.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 24,
+                  "endLine": 11,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Repositories/UnidadPolicialRepositorio.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 24,
+                  "endLine": 18,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2933",
+          "level": "warning",
+          "message": "Make '_dbEntities' 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Repositories/UsuarioRepositorio.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 24,
+                  "endLine": 13,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1075",
+          "level": "warning",
+          "message": "Refactor your code not to use hardcoded absolute paths or URIs.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOC/Controllers/DocumentoController.cs",
+                "region": {
+                  "startLine": 161,
+                  "startColumn": 51,
+                  "endLine": 161,
+                  "endColumn": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS0169": {
+          "id": "CS0169",
+          "shortDescription": "Nunca se usa el campo",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS0169)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS1998": {
+          "id": "CS1998",
+          "shortDescription": "El método asincrónico carece de operadores \"await\" y se ejecutará de forma sincrónica",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1998)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS4014": {
+          "id": "CS4014",
+          "shortDescription": "Dado que no se esperaba esta llamada, la ejecución del método actual continuará antes de que se complete la llamada",
+          "fullDescription": "El método actual llama a un método asincrónico que devuelve una tarea o un Task<TResult>, y no aplica el operador Await al resultado. La llamada al método asincrónico inicia una tarea asincrónica. Sin embargo, debido a que no se aplica ningún operador Await, el programa continúa sin esperar a que finalice la tarea. En la mayoría de los casos, este comportamiento no es el esperado. Generalmente, otros aspectos del método de llamada dependen de los resultados de la llamada. O bien, se espera como mínimo que el método al que se llama se complete antes de volver al método que contiene la llamada.\u000d\u000a\u000d\u000aUn problema de igual importancia es el que se genera con las excepciones que se producen en el método asincrónico al que se llama. Las excepciones que se producen en un método que devuelve una tarea o un Task<TResult> se almacenan en la tarea devuelta. Si no espera por la tarea o no realiza una comprobación explícita de excepciones, la excepción se pierde. Si espera por la tarea, su excepción se vuelve a producir.\u000d\u000a\u000d\u000aComo procedimiento recomendado, siempre debe esperar por la llamada.\u000d\u000a\u000d\u000aConsidere la posibilidad de suprimir la advertencia solo si tiene la seguridad de que no desea esperar a que la llamada asincrónica se complete y que el método al que se llama no producirá excepciones. En ese caso, puede suprimir la advertencia asignando el resultado de la tarea de la llamada a una variable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS4014)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Desreferencia de una referencia posiblemente NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S101": {
+          "id": "S101",
+          "shortDescription": "Types should be named in PascalCase",
+          "fullDescription": "Shared naming conventions allow teams to collaborate efficiently. This rule checks whether or not type names are using PascalCase. To reduce noise, two consecutive upper case characters are allowed unless they form the whole type name. So, MyXClass is compliant, but XC on its own is not.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-101",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S1075": {
+          "id": "S1075",
+          "shortDescription": "URIs should not be hardcoded",
+          "fullDescription": "Hardcoding a URI makes it difficult to test a program: path literals are not always portable across operating systems, a given absolute path may not exist on a specific test environment, a specified Internet URL may not be available when executing the tests, production environment filesystems usually differ from the development environment, …​etc. For all those reasons, a URI should never be hardcoded. Instead, it should be replaced by customizable parameter.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1075",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope"
+            ]
+          }
+        },
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Utility classes, which are collections of static members, are not meant to be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S2933": {
+          "id": "S2933",
+          "shortDescription": "Fields that are only assigned in the constructor should be \"readonly\"",
+          "fullDescription": "readonly fields can only be assigned in a class constructor. If a class has a field that’s not marked readonly but is only set in the constructor, it could cause confusion about the field’s intended use. To avoid confusion, such fields should be marked readonly to make their intended use explicit, and to prevent future maintainers from inadvertently changing their use.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2933",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

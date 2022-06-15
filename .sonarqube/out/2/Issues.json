@@ -1,0 +1,1042 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador de Microsoft (R) Visual C#",
+        "version": "4.2.0.0",
+        "fileVersion": "4.2.0-4.22220.2 (1e40aa11)",
+        "semanticVersion": "4.2.0",
+        "language": "es-MX"
+      },
+      "results": [
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/UnidadPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 85,
+                  "endLine": 18,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/EfectivoPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 119,
+                  "endLine": 19,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Desreferencia de una referencia posiblemente NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/HomeControllerTest.cs",
+                "region": {
+                  "startLine": 26,
+                  "startColumn": 23,
+                  "endLine": 26,
+                  "endColumn": 27
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/UnidadPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 85,
+                  "endLine": 29,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/UnidadPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 42,
+                  "startColumn": 85,
+                  "endLine": 42,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 50,
+                  "endLine": 29,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 106,
+                  "endLine": 29,
+                  "endColumn": 110
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 29,
+                  "startColumn": 112,
+                  "endLine": 29,
+                  "endColumn": 116
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"data\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UsuarioRepositorioTest.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 33,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UsuarioRepositorioTest.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 33,
+                  "endLine": 14,
+                  "endColumn": 37
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"mockDB\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UsuarioRepositorioTest.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 30,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UsuarioRepositorioTest.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 30,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/EfectivoPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 119,
+                  "endLine": 33,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/EfectivoPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 46,
+                  "startColumn": 119,
+                  "endLine": 46,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/UnidadPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 61,
+                  "startColumn": 85,
+                  "endLine": 61,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 82,
+                  "endLine": 50,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 88,
+                  "endLine": 50,
+                  "endColumn": 92
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 94,
+                  "endLine": 50,
+                  "endColumn": 98
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 50,
+                  "startColumn": 100,
+                  "endLine": 50,
+                  "endColumn": 104
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/UnidadPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 80,
+                  "startColumn": 85,
+                  "endLine": 80,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/EfectivoPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 62,
+                  "startColumn": 119,
+                  "endLine": 62,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/UnidadPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 85,
+                  "endLine": 94,
+                  "endColumn": 89
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/EfectivoPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 76,
+                  "startColumn": 119,
+                  "endLine": 76,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/EfectivoPolicialControllerTest.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 119,
+                  "endLine": 94,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 50,
+                  "endLine": 72,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 113,
+                  "endLine": 72,
+                  "endColumn": 117
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 72,
+                  "startColumn": 119,
+                  "endLine": 72,
+                  "endColumn": 123
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 115,
+                  "endLine": 97,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 121,
+                  "endLine": 97,
+                  "endColumn": 125
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 97,
+                  "startColumn": 127,
+                  "endLine": 97,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 115,
+                  "endLine": 109,
+                  "endColumn": 119
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 121,
+                  "endLine": 109,
+                  "endColumn": 125
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 109,
+                  "startColumn": 127,
+                  "endLine": 109,
+                  "endColumn": 131
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 114,
+                  "endLine": 122,
+                  "endColumn": 118
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 120,
+                  "endLine": 122,
+                  "endColumn": 124
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8625",
+          "level": "warning",
+          "message": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 126,
+                  "endLine": 122,
+                  "endColumn": 130
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"data\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/EfectivoPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 42,
+                  "endLine": 16,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/EfectivoPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 42,
+                  "endLine": 16,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"mockDB\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/EfectivoPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 30,
+                  "endLine": 17,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/EfectivoPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 30,
+                  "endLine": 17,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"data\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/DocumentoRepositorioTest.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 35,
+                  "endLine": 14,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/DocumentoRepositorioTest.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 35,
+                  "endLine": 14,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"mockDB\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/DocumentoRepositorioTest.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 30,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/DocumentoRepositorioTest.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 30,
+                  "endLine": 15,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"data\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UnidadPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 40,
+                  "endLine": 15,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UnidadPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 15,
+                  "startColumn": 40,
+                  "endLine": 15,
+                  "endColumn": 44
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "El elemento campo \"mockDB\" que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declarar el elemento campo como que admite un valor NULL.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UnidadPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 30,
+                  "endLine": 16,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Repositories/UnidadPolicialRepositorioTest.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 30,
+                  "endLine": 16,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2699",
+          "level": "warning",
+          "message": "Add at least one assertion to this test case.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///D:/Proyectos%20Rider/SIREDOC/SIREDOCTest/Controllers/DocumentoControllerTest.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 17,
+                  "endLine": 88,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Desreferencia de una referencia posiblemente NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Un campo que no acepta valores NULL debe contener un valor distinto de NULL al salir del constructor. Considere la posibilidad de declararlo como que admite un valor NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8625": {
+          "id": "CS8625",
+          "shortDescription": "No se puede convertir un literal NULL en un tipo de referencia que no acepta valores NULL.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8625)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S2699": {
+          "id": "S2699",
+          "shortDescription": "Tests should include assertions",
+          "fullDescription": "A test case without assertions ensures only that no exceptions are thrown. Beyond basic runnability, it ensures nothing about the behavior of the code under test.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2699",
+          "properties": {
+            "category": "Blocker Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

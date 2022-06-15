@@ -1,0 +1,6 @@
+projectKey=siredoc
+serverUrl=https://sonar-test.bit2bittest.com
+serverVersion=9.4.0.54424
+dashboardUrl=https://sonar-test.bit2bittest.com/dashboard?id=siredoc
+ceTaskId=AYFQqMG_eoUkPA3rNnla
+ceTaskUrl=https://sonar-test.bit2bittest.com/api/ce/task?id=AYFQqMG_eoUkPA3rNnla
