@@ -17,11 +17,25 @@
       "id": "957f8a20-2a16-4e35-8326-786135212b06",
       "comment": "",
       "command": "click",
-      "target": "css=.nav-item:nth-child(5) strong",
+      "target": "css=.nav-item:nth-child(4) strong",
       "targets": [
-        ["css=.nav-item:nth-child(5) strong", "css:finder"],
-        ["xpath=//li[5]/a/strong", "xpath:position"],
+        ["css=.nav-item:nth-child(4) strong", "css:finder"],
+        ["xpath=//li[4]/a/strong", "xpath:position"],
         ["xpath=//strong[contains(.,'Unidades')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc672dd5-8bcd-4516-bdc4-c72b38ab55ff",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo Unidad",
+      "targets": [
+        ["linkText=Nuevo Unidad", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Unidad')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/unidadpolicial/create')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Unidad')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -62,7 +76,7 @@
         ["xpath=//input[@id='Direccion']", "xpath:attributes"],
         ["xpath=//div[3]/input", "xpath:position"]
       ],
-      "value": "Jr. Amalia Puga 1111"
+      "value": "Jr Amalia Puga 1111"
     }, {
       "id": "4d0075d5-e6b9-4ef9-9dae-46713793e2e1",
       "comment": "",
@@ -228,11 +242,13 @@
       "id": "e78f326a-48a7-42ab-aac9-b95c193df353",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "id=DocumentosIndex",
+      "target": "id=LoginsIndex",
       "targets": [
-        ["css=h1", "css:finder"],
-        ["xpath=//h1", "xpath:position"],
-        ["xpath=//h1[contains(.,'Listado de Documentos')]", "xpath:innerText"]
+        ["id=LoginsIndex", "id"],
+        ["css=#LoginsIndex", "css:finder"],
+        ["xpath=//h3[@id='LoginsIndex']", "xpath:attributes"],
+        ["xpath=//h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Iniciar Sesión')]", "xpath:innerText"]
       ],
       "value": ""
     }]
@@ -399,7 +415,7 @@
         ["xpath=//select[@id='EfectivoId']", "xpath:attributes"],
         ["xpath=//div[8]/select", "xpath:position"]
       ],
-      "value": "Maloni"
+      "value": "Victor"
     }, {
       "id": "ce11c9e4-44fe-440f-b4b6-62426e816606",
       "comment": "",
@@ -487,6 +503,20 @@
       ],
       "value": ""
     }, {
+      "id": "9eb162af-f542-4865-b563-50d2084c7dd5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo Efectivo",
+      "targets": [
+        ["linkText=Nuevo Efectivo", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Efectivo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/efectivopolicial/create')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Efectivo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
       "id": "9c6b0b6b-436a-4f73-853c-c14ec2933a53",
       "comment": "",
       "command": "type",
@@ -524,7 +554,7 @@
         ["xpath=//select[@id='UnidadId']", "xpath:attributes"],
         ["xpath=//select", "xpath:position"]
       ],
-      "value": "DEPSEEST"
+      "value": "UNITIC"
     }, {
       "id": "4e526e32-a3c6-4c0c-ac80-51c160a21724",
       "comment": "",
@@ -651,21 +681,6 @@
       ],
       "value": ""
     }, {
-      "id": "17bead67-0c16-4c0a-874c-e1e6ac436380",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cancelar",
-      "targets": [
-        ["linkText=Cancelar", "linkText"],
-        ["css=.btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'Cancelar')]", "xpath:link"],
-        ["xpath=//a[@type='button']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/documento/index')]", "xpath:href"],
-        ["xpath=//form/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cancelar')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "f4026def-e3b9-4553-ad41-30290a5aab0e",
       "comment": "",
       "command": "assertElementPresent",
@@ -741,21 +756,6 @@
         ["css=.nav-item:nth-child(4) strong", "css:finder"],
         ["xpath=//li[4]/a/strong", "xpath:position"],
         ["xpath=//strong[contains(.,'Unidades')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "6b88c841-d725-4e98-8eca-753ae5c67c2a",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cancelar",
-      "targets": [
-        ["linkText=Cancelar", "linkText"],
-        ["css=.btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'Cancelar')]", "xpath:link"],
-        ["xpath=//a[@type='button']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/documento/index')]", "xpath:href"],
-        ["xpath=//form/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cancelar')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -950,21 +950,6 @@
         ["css=.nav-item:nth-child(4) strong", "css:finder"],
         ["xpath=//li[4]/a/strong", "xpath:position"],
         ["xpath=//strong[contains(.,'Unidades')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "b1900b43-7f39-4678-94e7-9945b1bf9e3e",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cancelar",
-      "targets": [
-        ["linkText=Cancelar", "linkText"],
-        ["css=.btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'Cancelar')]", "xpath:link"],
-        ["xpath=//a[@type='button']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/documento/index')]", "xpath:href"],
-        ["xpath=//form/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cancelar')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -1295,21 +1280,6 @@
       ],
       "value": ""
     }, {
-      "id": "c9596130-8a41-4279-b6a6-409f4a8a55dc",
-      "comment": "",
-      "command": "click",
-      "target": "linkText=Cancelar",
-      "targets": [
-        ["linkText=Cancelar", "linkText"],
-        ["css=.btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'Cancelar')]", "xpath:link"],
-        ["xpath=//a[@type='button']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/documento/index')]", "xpath:href"],
-        ["xpath=//form/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cancelar')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
       "id": "52bbfd88-bb1f-400c-aab9-cfe83bb4b0e8",
       "comment": "",
       "command": "click",
@@ -1455,28 +1425,15 @@
       "id": "7e6cdfe5-96ce-4d50-b883-185cf9513850",
       "comment": "",
       "command": "click",
-      "target": "linkText=Cancelar",
+      "target": "linkText=Eliminar",
       "targets": [
-        ["linkText=Cancelar", "linkText"],
+        ["linkText=Eliminar", "linkText"],
         ["css=.btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'Cancelar')]", "xpath:link"],
-        ["xpath=//a[@type='button']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/documento/index')]", "xpath:href"],
-        ["xpath=//form/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cancelar')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "a7ea62d7-1199-41aa-948a-2feb2edab1fb",
-      "comment": "",
-      "command": "click",
-      "target": "css=tr:nth-child(4) .btn-danger",
-      "targets": [
-        ["css=tr:nth-child(4) .btn-danger", "css:finder"],
-        ["xpath=(//a[contains(text(),'Eliminar')])[4]", "xpath:link"],
-        ["xpath=(//a[@type='button'])[8]", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/efectivopolicial/delete?id=8')]", "xpath:href"],
-        ["xpath=//tr[4]/td[7]/a[2]", "xpath:position"]
+        ["xpath=//a[contains(text(),'Eliminar')]", "xpath:link"],
+        ["xpath=(//a[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/efectivopolicial/delete?id=2')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Eliminar')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
@@ -1560,28 +1517,15 @@
       "id": "b6332798-23dc-4f50-8a70-37ef846ecf18",
       "comment": "",
       "command": "click",
-      "target": "linkText=Cancelar",
+      "target": "linkText=Eliminar",
       "targets": [
-        ["linkText=Cancelar", "linkText"],
-        ["css=.btn-danger", "css:finder"],
-        ["xpath=//a[contains(text(),'Cancelar')]", "xpath:link"],
-        ["xpath=//a[@type='button']", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/documento/index')]", "xpath:href"],
-        ["xpath=//form/a", "xpath:position"],
-        ["xpath=//a[contains(.,'Cancelar')]", "xpath:innerText"]
-      ],
-      "value": ""
-    }, {
-      "id": "b9b3647e-d6e8-4e5b-8063-6491551d272e",
-      "comment": "",
-      "command": "click",
-      "target": "css=tr:nth-child(5) .btn-danger",
-      "targets": [
-        ["css=tr:nth-child(5) .btn-danger", "css:finder"],
-        ["xpath=(//a[contains(text(),'Eliminar')])[5]", "xpath:link"],
-        ["xpath=(//a[@type='button'])[10]", "xpath:attributes"],
-        ["xpath=//a[contains(@href, '/unidadpolicial/delete?id=13')]", "xpath:href"],
-        ["xpath=//tr[5]/td[6]/a[2]", "xpath:position"]
+        ["linkText=Eliminar", "linkText"],
+        ["css=tr:nth-child(1) .btn-danger", "css:finder"],
+        ["xpath=//a[contains(text(),'Eliminar')]", "xpath:link"],
+        ["xpath=(//a[@type='button'])[2]", "xpath:attributes"],
+        ["xpath=//a[contains(@href, '/unidadpolicial/delete?id=1')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'Eliminar')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
