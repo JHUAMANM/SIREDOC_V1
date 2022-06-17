@@ -24,6 +24,7 @@ public class HomeController : Controller
     }
     public IActionResult Contacto()
     {
+        ViewBag.Message = "Nosotros.";
         return View();
     }
 

@@ -17,6 +17,10 @@
       <_ContentIncludedByDefault Remove="Views\Ciudadano\Delete.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Ciudadano\Edit.cshtml" />
       <_ContentIncludedByDefault Remove="Views\Ciudadano\Index.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Entidad\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Entidad\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Entidad\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Entidad\Index.cshtml" />
     </ItemGroup>
 
     <ItemGroup>
