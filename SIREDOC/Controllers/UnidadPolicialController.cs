@@ -18,7 +18,7 @@ public class UnidadPolicialController : Controller
     [HttpGet]
     public IActionResult Index()
     {
-        //var items = _dbEntities.UnidadPolicials.Where(o => o.IdUnidad == o.IdUnidad).ToList();
+        
         var items = _unidadPolicialRepositorio.ObtenerTodos();
         
         return View(items);
@@ -27,7 +27,6 @@ public class UnidadPolicialController : Controller
     [HttpGet]
     public IActionResult Create()
     {
-        //ViewBag.Unidad = _dbEntities.UnidadPolicials;
         ViewBag.Unidad = _unidadPolicialRepositorio.ObtenerTodos();
         return View(new UnidadPolicial());
     }
@@ -35,28 +34,32 @@ public class UnidadPolicialController : Controller
     [HttpPost]
     public IActionResult Create(UnidadPolicial unidades)
     {
+        var cuentas = _dbEntities.UnidadPolicials.Where(o => o.Nombre == unidades.Nombre).Count();
+
+        if (cuentas > 0)
+        {
+            ModelState.AddModelError("Nombre", "Nombre de la unidad ya existe");
+        }
+        
         if (!ModelState.IsValid)
         {
             ViewBag.Unidad = _unidadPolicialRepositorio.ObtenerTodos();
             return View("Create", unidades);
         }
+        if (!ModelState.IsValid)
+        {
+           ViewBag.TipoDeCuentas = _unidadPolicialRepositorio.ObtenerTodos();
+            return View("Create", unidades);
+        }
 
-        // unidades.IdUnidad = unidades.IdUnidad;
-        //
-        // _dbEntities.UnidadPolicials.Add(unidades);
-        // _dbEntities.SaveChanges();
-        
         _unidadPolicialRepositorio.GuardarUnidad(unidades);
-
+        TempData["SuccessMessage"] = "Unidad agregada correctamente";
         return RedirectToAction("Index");
     }
     
     [HttpGet]
     public IActionResult Edit(int id)
     {
-        //var unidad = _dbEntities.UnidadPolicials.First(o => o.IdUnidad == id); 
-        //ViewBag.Unidad = _dbEntities.UnidadPolicials.ToList();
-
         var unidad = _unidadPolicialRepositorio.ObtenerUnidadPorId(id);
         ViewBag.Unidad = _unidadPolicialRepositorio.ObtenerTodos();
         
@@ -70,26 +73,18 @@ public class UnidadPolicialController : Controller
             ViewBag.Unidad = _dbEntities.UnidadPolicials.ToList();
             return View("Edit", unidad);
         }
-        // var unidadDB = _dbEntities.UnidadPolicials.First(o => o.IdUnidad == id);
-        // unidadDB.Nombre = unidad.Nombre;
-        // unidadDB.Tipo = unidad.Tipo;
-        
-        //_dbEntities.SaveChanges();
-
+       
         _unidadPolicialRepositorio.EditarUnidadPorId(id, unidad);
-        
+        TempData["SuccessMessage"] = "Unidad editada correctamente";
         return RedirectToAction("Index");
     }
     
     [HttpGet]
     public IActionResult Delete(int id)
     {
-        // var unidadDB = _dbEntities.UnidadPolicials.First(o => o.IdUnidad == id);
-        // _dbEntities.UnidadPolicials.Remove(unidadDB);
-        // _dbEntities.SaveChanges();
-        
+       
         _unidadPolicialRepositorio.DeleteUnidad(id);
-
+        TempData["SuccessMessage"] = "Unidad eliminada correctamente";
         return RedirectToAction("Index");
     }
 }

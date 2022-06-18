@@ -1,6 +1,13 @@
 <div class="container" style="background: white">
     <h1 id="PoliciasIndex">Listado de Efectivo Policiales</h1>
-
+    <br>
+     @if (TempData["SuccessMessage"] != null)
+     {
+         <div class="alert alert-success">
+             @TempData["SuccessMessage"]
+         </div>
+         
+     }
     <a class="btn btn-primary" href="/efectivopolicial/create">Nuevo Efectivo</a>
 
     <table class="table">
@@ -36,5 +43,5 @@
         }
         </tbody>
     </table>
-    Los datos personales es información clasificada: @ViewBag.Total
+    Policía Nacional del Perú - FRENPOL Cajamarca
 </div>

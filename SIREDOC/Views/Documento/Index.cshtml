@@ -1,24 +1,35 @@
 @using SIREDOC.Constantes;
 
-<div class="container" style="background: white; width: 2820rem">
+<div class="container-fluid bg-success" style = "width: 1500px">
+<div class="container-fluid" style="background: white" >
     <h1 id="ListadoIndex">Listado de Documentos</h1>
-
+    <br>
+     @if (TempData["SuccessMessage"] != null)
+     {
+         <div class="alert alert-success">
+             @TempData["SuccessMessage"]
+         </div>
+         
+     }
+    
     <a class="btn btn-primary" href="/documento/create">Nuevo Documento</a>
 
-    <table class="table table-striped" background="fondo.gif" >
+    <table class="table fixed-table-container" style="margin-left: 1px; margin-right: 1px" background="fondo.gif" >
         <thead>
-        <tr>
-            <td>Tipo</td>
-            <td>Numero</td>
-            <td>Fecha</td>
-            <td>Asunto</td>
-            <td>Asignado</td>
-            <td>Archivo</td>
-            <td>Observaciones</td>
-            <td>Estado</td>
-            <td>
+        <tr style="color:black">
             
+            <td><b>Tipo</b></td>
+            <td><b>Numero</b></td>
+            <td><b>Fecha</b></td>
+            <td><b>Asunto</b></td>
+            <td><b>Asignado</b></td>
+            <td><b>Archivo</b></td>
+            <td><b>Observaciones</b></td>
+            <td><b>Estado</b></td>
+            <td>
+
             </td>
+           
         </tr>
         </thead>
         <tbody>
@@ -65,5 +76,6 @@
         }
         </tbody>
     </table>
-    Policía Nacional del Perú
+    Unidad de Tecnologías de la Información y Comunicaciones Nacional del Perú - FRENPOL Cajamarca
+</div>
 </div>

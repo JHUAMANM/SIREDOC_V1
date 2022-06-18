@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
 using NUnit.Framework;
 using SIREDOC.Controllers;
@@ -69,7 +70,14 @@ public class DocumentoControllerTest
 
         var mockDocumentoRepositorio = new Mock<IDocumentoRepositorio>();
         
-        var controller = new DocumentoController(null, mockDocumentoRepositorio.Object, mockUsuarioRepo.Object, null, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        
+        var controller = new DocumentoController(null, mockDocumentoRepositorio.Object, mockUsuarioRepo.Object, null, null)
+        {
+            TempData = tempData
+        };
 
         controller.ControllerContext = new ControllerContext()
         {
@@ -106,7 +114,14 @@ public class DocumentoControllerTest
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         var mockDocumentoRepositorio = new Mock<IDocumentoRepositorio>();
         
-        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object, null, null, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        
+        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object, null, null, null)
+        {
+            TempData = tempData
+        };
 
         var view = controller.Edit(2, new Documento());
         
@@ -119,7 +134,14 @@ public class DocumentoControllerTest
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         var mockDocumentoRepositorio = new Mock<IDocumentoRepositorio>();
         
-        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object,null, null, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        
+        var controller = new DocumentoController(mockEfectivoRepositorio.Object, mockDocumentoRepositorio.Object,null, null, null)
+        {
+            TempData = tempData
+        };
 
         var view = controller.Delete(2);
         

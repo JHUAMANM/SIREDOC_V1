@@ -35,10 +35,7 @@ public class DocumentoController: Controller
     {
 
         var usuario = GetLoggedUser();
-        //var documentos = _dbEntities.Documentos
         var documentos = _documentoRepositorio.ObtenerDocumentosDeUsuario(usuario.Id);
-        
-        //ViewBag.Total = documentos.Any() ? documentos.Sum(o => o.UsuarioId) : 0; 
         
         return View(documentos);
     }
@@ -63,22 +60,14 @@ public class DocumentoController: Controller
 
         if (!ModelState.IsValid)
         {
-            
-           // ViewBag.Policia = _dbEntities.EfectivoPolicials.ToList();
             ViewBag.Policia = _efectivoPolicialRepositorio.ObtenerTodos();
-            /*Upload(documento);*/
             return View("Create", documento);
         }
 
-       
-        
         documento.Estado = ESTADO.POR_ATENDER;
-        //_dbEntities.Documentos.Add(documento);
-        //_dbEntities.SaveChanges();
-        
         _documentoRepositorio.GuardarDocumento(documento);
 
-
+        TempData["SuccessMessage"] = "Documento eliminado correctamente";
         return RedirectToAction("Index");
 
     }
@@ -100,24 +89,18 @@ public class DocumentoController: Controller
             return View("Edit", documento);
         }
         
-        // var documentoDB = _dbEntities.Documentos.First(o => o.Id == id);
-        // documentoDB.Tipo = documento.Tipo;
-        // documentoDB.Observaciones = documento.Observaciones;
         
         _documentoRepositorio.PostEditarDocumentoPorId(id,documento);
-        
+        TempData["SuccessMessage"] = "Documento eliminado correctamente";
         return RedirectToAction("Index");
     }
     
     [HttpGet]
     public IActionResult Delete(int id)
     {
-        // var documentoDB = _dbEntities.Documentos.First(o => o.Id == id);
-        // _dbEntities.Documentos.Remove(documentoDB);
-        // _dbEntities.SaveChanges();
         
         _documentoRepositorio.DeleteDocPorId(id);
-
+        TempData["SuccessMessage"] = "Documento eliminado correctamente";
         return RedirectToAction("Index");
     }
     
@@ -129,7 +112,7 @@ public class DocumentoController: Controller
 
         _documentoRepositorio.ActualizarEstadoDeDocumento(documentoId, user.Id);
 
-        //TempData["SuccessMessage"] = "Se marco como leyendo el libro";
+        TempData["SuccessMessage"] = "Documento en proceso";
 
         return RedirectToAction("Index");
     }
@@ -141,7 +124,8 @@ public class DocumentoController: Controller
 
         _documentoRepositorio.MarcarAtendidoEstado(documentoId, user.Id);
 
-        //TempData["SuccessMessage"] = "Se marco como leyendo el libro";
+        TempData["SuccessMessage"] = "Documento Atendido";
+
 
         return RedirectToAction("Index");
     }
@@ -150,7 +134,7 @@ public class DocumentoController: Controller
         
         var claim = HttpContext.User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Name);
         var username = claim.Value;
-        //return _dbEntities.Usuarios.First(o => o.Username == username);
+        
        return _usuarioRepositorio.ObtenerLoggedUser(username);
 
     }
@@ -169,12 +153,8 @@ public class DocumentoController: Controller
            System.IO.Directory.CreateDirectory("Uploads");
        }
        System.IO.File.Copy(sourceFile, destinationFile);
-   
-       //var fileName = System.IO.Path.Combine(_environment.ContentRootPath, "uploads", path);
-   
-       //await path.Archivo.CopyToAsync(new System.IO.FileStream(fileName, System.IO.FileMode.Create));
-       
-        Console.WriteLine(sourceFile);
+
+       Console.WriteLine(sourceFile);
        return RedirectToAction("Index");
    }
 

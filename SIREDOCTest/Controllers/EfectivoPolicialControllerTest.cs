@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
 using NUnit.Framework;
 using SIREDOC.Controllers;
@@ -16,7 +18,13 @@ public class EfectivoPolicialControllerTest
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
        
-        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null)
+        {
+            TempData = tempData
+        };
 
         var view = controller.Index();
         
@@ -73,7 +81,14 @@ public class EfectivoPolicialControllerTest
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
         
-        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        
+        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null)
+        {
+            TempData = tempData
+        };
 
         var view = controller.Edit(2, new EfectivoPolicial{
             
@@ -91,7 +106,14 @@ public class EfectivoPolicialControllerTest
         mockEfectivoRepositorio.Setup(o => o.DeleteEfectivo(2));
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
         
-        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        
+        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null)
+        {
+            TempData = tempData
+        };
 
         var view = controller.Delete(2);
         

@@ -62,13 +62,4 @@ public class UsuarioRepositorioTest
         Assert.AreEqual("user2", result.Username);
     }
     
-    [Test]
-    public void ObtenerUsuarioRepoErrorTestCaso01()
-    {
-        var ropositorio = new UsuarioRepositorio(mockDB.Object);
-
-        var result = ropositorio.ObtenerLoggedUser("user");
-        
-        Assert.AreEqual("user", result.Username);
-    }
 }

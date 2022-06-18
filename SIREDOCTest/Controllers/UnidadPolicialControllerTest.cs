@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Moq;
 using NUnit.Framework;
 using SIREDOC.Controllers;
@@ -39,7 +41,14 @@ public class UnidadPolicialControllerTest
         
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
         
-        var controller = new UnidadPolicialController(mockUnidadRepositorio.Object, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        
+        var controller = new UnidadPolicialController(mockUnidadRepositorio.Object, null)
+        {
+            TempData = tempData
+        };
         
         
         var view = controller.Create(new UnidadPolicial()
@@ -91,7 +100,14 @@ public class UnidadPolicialControllerTest
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
         mockUnidadRepositorio.Setup(o => o.DeleteUnidad(2));
         
-        var controller = new UnidadPolicialController(mockUnidadRepositorio.Object, null);
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+        
+        var controller = new UnidadPolicialController(mockUnidadRepositorio.Object, null)
+        {
+            TempData = tempData
+        };
 
         var view = controller.Delete(2);
 
