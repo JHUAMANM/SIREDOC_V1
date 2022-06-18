@@ -415,7 +415,7 @@
         ["xpath=//select[@id='EfectivoId']", "xpath:attributes"],
         ["xpath=//div[8]/select", "xpath:position"]
       ],
-      "value": "Victor"
+      "value": "Jeancarlo"
     }, {
       "id": "ce11c9e4-44fe-440f-b4b6-62426e816606",
       "comment": "",
@@ -1539,6 +1539,193 @@
         ["xpath=//h1[@id='UnidadesIndex']", "xpath:attributes"],
         ["xpath=//h1", "xpath:position"],
         ["xpath=//h1[contains(.,'Listado de Unidades Policiales')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "09ba3215-b3cd-45dc-9322-300946445128",
+    "name": "Crear documento incorrecto",
+    "commands": [{
+      "id": "241237e0-e3a4-4555-957d-9491755dac3a",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02d1003a-d144-4a66-9700-41dcca62b60c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-light > strong",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0722cd3f-7e94-4457-be27-6e1c9039afa7",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "4a5994cb-bc5e-46bc-a1e1-d60c110c788c",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "4a47eb24-e76d-4a0e-bce6-66899a3a18d3",
+      "comment": "",
+      "command": "click",
+      "target": "css=path",
+      "targets": [
+        ["css=path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "289080ba-0d86-48ad-9a81-daaf88efd409",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo Documento",
+      "targets": [
+        ["linkText=Nuevo Documento", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Documento')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/documento/create')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Documento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e59ea42-3816-4a23-a468-b929a6e34a9e",
+      "comment": "",
+      "command": "select",
+      "target": "id=Tipo",
+      "targets": [
+        ["id=Tipo", "id"],
+        ["name=Tipo", "name"],
+        ["css=#Tipo", "css:finder"],
+        ["xpath=//select[@id='Tipo']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "INFORME"
+    }, {
+      "id": "ac8a86f7-cf8b-4373-9a28-6f86c7279999",
+      "comment": "",
+      "command": "type",
+      "target": "id=Numero",
+      "targets": [
+        ["id=Numero", "id"],
+        ["name=Numero", "name"],
+        ["css=#Numero", "css:finder"],
+        ["xpath=//input[@id='Numero']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "204-2022"
+    }, {
+      "id": "4f07fae7-503a-4690-a8cd-4547e66b1b50",
+      "comment": "",
+      "command": "type",
+      "target": "id=Fecha",
+      "targets": [
+        ["id=Fecha", "id"],
+        ["name=Fecha", "name"],
+        ["css=#Fecha", "css:finder"],
+        ["xpath=//input[@id='Fecha']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3e716b31-a60a-4652-9567-d32630d8abec",
+      "comment": "",
+      "command": "type",
+      "target": "id=Asunto",
+      "targets": [
+        ["id=Asunto", "id"],
+        ["name=Asunto", "name"],
+        ["css=#Asunto", "css:finder"],
+        ["xpath=//input[@id='Asunto']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": "Apoyo Policial"
+    }, {
+      "id": "661356cd-af02-47fd-ad9a-b66c4ca5b50f",
+      "comment": "",
+      "command": "select",
+      "target": "id=Asignado",
+      "targets": [
+        ["id=Asignado", "id"],
+        ["name=Asignado", "name"],
+        ["css=#Asignado", "css:finder"],
+        ["xpath=//select[@id='Asignado']", "xpath:attributes"],
+        ["xpath=//div[5]/select", "xpath:position"]
+      ],
+      "value": "VILLAR"
+    }, {
+      "id": "6e3c2e1b-554d-4277-a96d-06c5a24c1114",
+      "comment": "",
+      "command": "click",
+      "target": "id=Archivo",
+      "targets": [],
+      "value": "OFITIC.docx"
+    }, {
+      "id": "6a9da712-025d-4c6d-8cf0-e31f08606aa0",
+      "comment": "",
+      "command": "type",
+      "target": "id=Observaciones",
+      "targets": [
+        ["id=Observaciones", "id"],
+        ["name=Observaciones", "name"],
+        ["css=#Observaciones", "css:finder"],
+        ["xpath=//input[@id='Observaciones']", "xpath:attributes"],
+        ["xpath=//div[7]/input", "xpath:position"]
+      ],
+      "value": "Trabajo Culminado"
+    }, {
+      "id": "64f2ccff-91e3-4451-9191-d44e8b334cfe",
+      "comment": "",
+      "command": "select",
+      "target": "id=EfectivoId",
+      "targets": [
+        ["id=EfectivoId", "id"],
+        ["name=EfectivoId", "name"],
+        ["css=#EfectivoId", "css:finder"],
+        ["xpath=//select[@id='EfectivoId']", "xpath:attributes"],
+        ["xpath=//div[8]/select", "xpath:position"]
+      ],
+      "value": "Jeancarlo"
+    }, {
+      "id": "b543eafc-d8a6-4a7b-a4ec-739575647cec",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "588a75e6-5854-4140-85e8-5b068018da0e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Nuevo Documento')]", "xpath:innerText"]
       ],
       "value": ""
     }]

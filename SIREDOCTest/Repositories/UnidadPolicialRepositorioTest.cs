@@ -20,10 +20,10 @@ public class UnidadPolicialRepositorioTest
     {
         data = new List<UnidadPolicial>()
         {
-            new(){ IdUnidad = 1, Nombre = "UNICII", Tipo = "ADMI", Direccion = "Jr. Amalia Puga", Telefono = "987456321", Correo = "unicii@gmai.com"},
-            new(){ IdUnidad = 2, Nombre = "USE", Tipo = "OPE", Direccion = "Jr. Amalia Puga", Telefono = "963258741", Correo = "use@gmai.com"},
-            new(){ IdUnidad = 3, Nombre = "UNITIC", Tipo = "ADMI", Direccion = "Jr. Amalia Puga", Telefono = "985632541", Correo = "unitic@gmai.com"},
-            new(){ IdUnidad = 4, Nombre = "SUAT", Tipo = "OPE", Direccion = "Jr. Amalia Puga", Telefono = "957852321", Correo = "suat@gmai.com"}
+            new(){ IdUnidad = 1, Nombre = "UNICII", Tipo = "ADMI", Direccion = "Jr Amalia Puga", Telefono = "987456321", Correo = "unicii@gmai.com"},
+            new(){ IdUnidad = 2, Nombre = "USE", Tipo = "OPE", Direccion = "Jr Amalia Puga", Telefono = "963258741", Correo = "use@gmai.com"},
+            new(){ IdUnidad = 3, Nombre = "UNITIC", Tipo = "ADMI", Direccion = "Jr Amalia Puga", Telefono = "985632541", Correo = "unitic@gmai.com"},
+            new(){ IdUnidad = 4, Nombre = "SUAT", Tipo = "OPE", Direccion = "Jr Amalia Puga", Telefono = "957852321", Correo = "suat@gmai.com"}
         }.AsQueryable();
         
         var mockDbsetUnidad = new MockDBSet<UnidadPolicial>(data);

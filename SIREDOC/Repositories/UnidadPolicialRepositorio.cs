@@ -11,6 +11,7 @@ public interface IUnidadPolicialRepositorio
     void EditarUnidadPorId(int id, UnidadPolicial unidad);
     void DeleteUnidad(int id);
     List<UnidadPolicial> ObtenerPorNombre(string nombre);
+    int ContarPorNombre(UnidadPolicial unidades);
 
 }
 public class UnidadPolicialRepositorio: IUnidadPolicialRepositorio
@@ -25,6 +26,14 @@ public class UnidadPolicialRepositorio: IUnidadPolicialRepositorio
     public List<UnidadPolicial> ObtenerTodos()
     {
         return _dbEntities.UnidadPolicials.ToList();
+        
+        /*if(buscar != null && buscar != "")
+        {
+            unidades = unidades.Where(o => o.Nombre.Contains(buscar, StringComparison.OrdinalIgnoreCase) ||
+                                           o.Tipo.Contains(buscar, StringComparison.OrdinalIgnoreCase)).OrderBy(o => o.Tipo)
+                .ToList();
+        }
+        return unidades;*/
     }
 
     public void GuardarUnidad(UnidadPolicial unidad)
@@ -57,5 +66,11 @@ public class UnidadPolicialRepositorio: IUnidadPolicialRepositorio
     public List<UnidadPolicial> ObtenerPorNombre(string nombre)
     {
         return _dbEntities.UnidadPolicials.Where(o => o.Nombre.Contains(nombre)).ToList();
+    }
+    public int ContarPorNombre(UnidadPolicial unidades)
+    {
+        return _dbEntities.UnidadPolicials.Where(o => o.Nombre == unidades.Nombre).Count();
+
+        
     }
 }

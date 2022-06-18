@@ -38,8 +38,9 @@ public class UnidadPolicialControllerTest
     [Test]
     public void PostTestCreateUnidadCaso01()
     {
-        
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
+        mockUnidadRepositorio.Setup(o => o.GuardarUnidad(new UnidadPolicial()));
+        mockUnidadRepositorio.Setup(o => o.ContarPorNombre(new UnidadPolicial())).Returns(1);
         
         var httpContext = new DefaultHttpContext();
         var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
@@ -55,6 +56,7 @@ public class UnidadPolicialControllerTest
             {Nombre = "UNICII", Tipo = "OPERATIVA", Direccion = "Jr. 13 Julio", Correo = "pnp@gmail.com",Telefono = "957456321"});
 
         Assert.IsNotNull(view);
+        Assert.IsInstanceOf<RedirectToActionResult>(view);
     }
     
     
@@ -83,7 +85,7 @@ public class UnidadPolicialControllerTest
         
         mockUnidadRepositorio.Setup(o => o.ObtenerUnidadPorId(2)).Returns(new UnidadPolicial
         {
-            Nombre = "UNICII", Tipo = "OPERATIVA", Direccion = "Jr. 13 Julio", Correo = "pnp@gmail.com",Telefono = "957456321"
+            Nombre = "UNICII", Tipo = "OPERATIVA", Direccion = "Jr 13 Julio", Correo = "pnp@gmail.com",Telefono = "957456321"
         });
       
         var controller = new UnidadPolicialController(mockUnidadRepositorio.Object, null);

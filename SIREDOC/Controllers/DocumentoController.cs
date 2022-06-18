@@ -1,4 +1,3 @@
-using System.Reflection;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -67,7 +66,7 @@ public class DocumentoController: Controller
         documento.Estado = ESTADO.POR_ATENDER;
         _documentoRepositorio.GuardarDocumento(documento);
 
-        TempData["SuccessMessage"] = "Documento eliminado correctamente";
+        TempData["SuccessMessage"] = "Documento guardado correctamente";
         return RedirectToAction("Index");
 
     }
@@ -91,7 +90,7 @@ public class DocumentoController: Controller
         
         
         _documentoRepositorio.PostEditarDocumentoPorId(id,documento);
-        TempData["SuccessMessage"] = "Documento eliminado correctamente";
+        TempData["SuccessMessage"] = "Documento editado correctamente";
         return RedirectToAction("Index");
     }
     

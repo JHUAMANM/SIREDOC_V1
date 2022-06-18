@@ -34,18 +34,15 @@ public class UnidadPolicialController : Controller
     [HttpPost]
     public IActionResult Create(UnidadPolicial unidades)
     {
-        var cuentas = _dbEntities.UnidadPolicials.Where(o => o.Nombre == unidades.Nombre).Count();
+        //var unidad = _dbEntities.UnidadPolicials.Where(o => o.Nombre == unidades.Nombre).Count();
+        var unidad = _unidadPolicialRepositorio.ContarPorNombre(unidades);
 
-        if (cuentas > 0)
+        if (unidad > 0)
         {
             ModelState.AddModelError("Nombre", "Nombre de la unidad ya existe");
         }
         
-        if (!ModelState.IsValid)
-        {
-            ViewBag.Unidad = _unidadPolicialRepositorio.ObtenerTodos();
-            return View("Create", unidades);
-        }
+
         if (!ModelState.IsValid)
         {
            ViewBag.TipoDeCuentas = _unidadPolicialRepositorio.ObtenerTodos();
