@@ -30,11 +30,11 @@ public class DocumentoController: Controller
     }
     
     [HttpGet]
-    public IActionResult Index()
+    public IActionResult Index(string buscar)
     {
 
         var usuario = GetLoggedUser();
-        var documentos = _documentoRepositorio.ObtenerDocumentosDeUsuario(usuario.Id);
+        var documentos = _documentoRepositorio.ObtenerDocumentosDeUsuario(usuario.Id, buscar);
         
         return View(documentos);
     }

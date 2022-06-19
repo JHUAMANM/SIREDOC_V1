@@ -8,7 +8,7 @@ namespace SIREDOC.Repositories;
 public interface IDocumentoRepositorio
 {
     //Ingresamos todos los metodos de la clase
-    List<Documento> ObtenerDocumentosDeUsuario(int UserId);
+    List<Documento> ObtenerDocumentosDeUsuario(int UserId, string buscar);
     List<Documento> ObtenerTodos();
 
     Documento GetEditarDocumentoPorId(int id);
@@ -35,17 +35,28 @@ public class DocumentoRepositorio: IDocumentoRepositorio
         _dbEntities = dbEntities;
     }
 
-    public List<Documento> ObtenerDocumentosDeUsuario(int UserId)
+    public List<Documento> ObtenerDocumentosDeUsuario(int UserId, string buscar)
     {
-      return _dbEntities.Documentos
+        var documentos = _dbEntities.Documentos
             .Include(o => o.EfectivoPolicial)
             .Where(o => o.UsuarioId == UserId).ToList();
+      
+      if(buscar != null && buscar != "")
+      {
+          documentos = documentos.Where(o => o.Tipo.Contains(buscar, StringComparison.OrdinalIgnoreCase) ||
+                                             o.Numero.Contains(buscar, StringComparison.OrdinalIgnoreCase) || 
+                                             o.Asignado.Contains(buscar, StringComparison.OrdinalIgnoreCase))
+              .OrderBy(o => o.Numero) 
+              .ToList();
+      }
+      return documentos;
+
     }
     
     public List<Documento> ObtenerTodos()
     {
         return _dbEntities.Documentos.ToList();
-
+        
     }
     
 

@@ -26,14 +26,7 @@ public class UnidadPolicialRepositorio: IUnidadPolicialRepositorio
     public List<UnidadPolicial> ObtenerTodos()
     {
         return _dbEntities.UnidadPolicials.ToList();
-        
-        /*if(buscar != null && buscar != "")
-        {
-            unidades = unidades.Where(o => o.Nombre.Contains(buscar, StringComparison.OrdinalIgnoreCase) ||
-                                           o.Tipo.Contains(buscar, StringComparison.OrdinalIgnoreCase)).OrderBy(o => o.Tipo)
-                .ToList();
-        }
-        return unidades;*/
+       
     }
 
     public void GuardarUnidad(UnidadPolicial unidad)

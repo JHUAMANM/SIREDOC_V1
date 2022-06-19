@@ -34,7 +34,7 @@ public class DocumentoControllerTest
             HttpContext = mockContex.Object
         };
 
-        var view = controller.Index();
+        var view = controller.Index("BUSCAR");
         
         Assert.IsNotNull(view);
         
