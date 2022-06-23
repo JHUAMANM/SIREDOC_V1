@@ -17,14 +17,10 @@ public class EfectivoPolicialControllerTest
     {
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
-       
-        var httpContext = new DefaultHttpContext();
-        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
-        tempData["SuccessMessage"] = "correcto";
-        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null)
-        {
-            TempData = tempData
-        };
+
+
+        var controller =
+            new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null);
 
         var view = controller.Index();
         
@@ -35,29 +31,61 @@ public class EfectivoPolicialControllerTest
     public void TestCreateEfectivoCaso01()
     {
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
+        
         mockEfectivoRepositorio.Setup(o => o.ObtenerTodos()).Returns(new List<EfectivoPolicial>());
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
-        
+       
         var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null);
 
         var view = controller.Create();
         
         Assert.IsNotNull(view);
     }
-
+    
     [Test]
     public void PostTestCreateCaso01()
     {
         
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
+        mockEfectivoRepositorio.Setup(o => o.GuardarEfectivo(new EfectivoPolicial()));
         var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
-        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null);
+        mockUnidadRepositorio.Setup(o => o.GuardarUnidad(new UnidadPolicial()));
         
-        
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+
+        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null)
+        {
+            TempData = tempData
+        };
+
         var view = controller.Create(new EfectivoPolicial()
-            {Nombre = "Luis", Apellidos = "Perez Alvarez", Cip = "32323232", Correo = "mail@gmail.com",Telefono = "987456321"});
+            {Nombre = "Luis", Apellidos = "Perez Alvarez", UnidadId = 1, Cip = "32323232", Correo = "mail@gmail.com",Telefono = "987456321"});
 
         Assert.IsNotNull(view);
+        Assert.IsInstanceOf<RedirectToActionResult>(view);
+    }
+    
+    [Test]
+    public void PostTestCreateCasoerror01()
+    {
+        
+        var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();
+        var mockUnidadRepositorio = new Mock<IUnidadPolicialRepositorio>();
+        var httpContext = new DefaultHttpContext();
+        var tempData = new TempDataDictionary(httpContext, Mock.Of<ITempDataProvider>());
+        tempData["SuccessMessage"] = "correcto";
+
+        var controller = new EfectivoPolicialController(mockEfectivoRepositorio.Object, mockUnidadRepositorio.Object, null)
+        {
+            TempData = tempData
+        };
+        controller.ModelState.AddModelError("Campo", "El campo no puede ser vacio");
+        var view = controller.Create(new EfectivoPolicial() {});
+
+        Assert.IsNotNull(view);
+        Assert.IsInstanceOf<ViewResult>(view);
     }
 
     [Test]

@@ -1,91 +1,91 @@
 @using SIREDOC.Constantes;
 
 <div class="container-fluid bg-success" style = "width: 1500px">
-<div class="container-fluid" style="background: white" >
-    <h1 id="ListadoIndex">Listado de Documentos</h1>
-    <br>
-     @if (TempData["SuccessMessage"] != null)
-     {
-         <div class="alert alert-success">
-             @TempData["SuccessMessage"]
-         </div>
-         
-     }
-    <div>
-        <form class="row g-3" action="/documento">
-            <div class="ms-3" style="text-align: right">
-                <input type="search" class="form-control-plaintex" placeholder="Buscar" name="buscar" id="buscar" aria-label="Search" aria-describedby="search-addon" value="@ViewBag.Buscar"/>
-                <button type="submit" class="btn btn-outline-success mb-2 btn-sm" style="margin: 10px">Buscar</button>
-                
-            </div>
-
-        </form>
-    </div>
-    
-    <a class="btn btn-primary" href="/documento/create">Nuevo Documento</a>
-
-    <table class="table fixed-table-container" style="margin-left: 1px; margin-right: 1px" background="fondo.gif" >
-        <thead>
-        <tr style="color:black">
-            
-            <td><b>Tipo</b></td>
-            <td><b>Numero</b></td>
-            <td><b>Fecha</b></td>
-            <td><b>Asunto</b></td>
-            <td><b>Asignado</b></td>
-            <td><b>Archivo</b></td>
-            <td><b>Observaciones</b></td>
-            <td><b>Estado</b></td>
-            <td>
-
-            </td>
-           
-        </tr>
-        </thead>
-        <tbody>
-        @foreach (var item in Model)
+    <div class="container-fluid" style="background: white" >
+        <h1 id="ListadoIndex">Listado de Documentos</h1>
+        <br>
+        @if (TempData["SuccessMessage"] != null)
         {
-            <tr>
-                <td>@item.Tipo</td>
-                <td>@item.Numero</td>
-                <td>@item.Fecha</td>
-                <td>@item.Asunto</td>
-                <td>@item.Asignado</td>
-                <td>@item.Archivo</td>
-                <td>@item.Observaciones</td>
-                <td>
-                    @if (item.Estado == ESTADO.POR_ATENDER)
-                    {
-                        <span>Por Atender</span>
-                    }
-                    @if (item.Estado == ESTADO.EN_PROCESO)
-                    {
-                        <span>En Proceso</span>
-                    }
-                    @if (item.Estado == ESTADO.ATENDIDO)
-                    {
-                        <span>ATENDIDO</span>
-                    }
-                </td>
-                <td>
-                    @if (item.Estado == ESTADO.POR_ATENDER)
-                    {
-                        <a type="button" href="/documento/MarcarEnProceso?documentoId=@item.Id" class="btn btn-primary btn-sm">En Proceso</a>
-                    }
-                    @if (item.Estado == ESTADO.EN_PROCESO)
-                    {
-                        <a type="button" href="/documento/MarcarComoAtendido?documentoId=@item.Id" class="btn btn-success btn-sm">Atendido</a>
-                    }
-                </td>    
-                <td>
-                    <a type="button" href="/documento/edit?id=@item.Id" class="btn btn-warning btn-sm">Editar</a>
-                    <a type="button" href="/documento/delete?id=@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
-                  
-                </td>
-            </tr>
+            <div class="alert alert-success">
+                @TempData["SuccessMessage"]
+            </div>
+         
         }
-        </tbody>
-    </table>
-    Unidad de Tecnologías de la Información y Comunicaciones Nacional del Perú - FRENPOL Cajamarca
-</div>
+        <div>
+            <form class="row g-3" action="/documento">
+                <div class="ms-3" style="text-align: right">
+                    <input type="search" class="form-control-plaintex" placeholder="Buscar" name="buscar" id="buscar" aria-label="Search" aria-describedby="search-addon" value="@ViewBag.Buscar"/>
+                    <button type="submit" class="btn btn-outline-success mb-2 btn-sm" style="margin: 10px">Buscar</button>
+                
+                </div>
+
+            </form>
+        </div>
+    
+        <a class="btn btn-primary" href="/documento/create">Nuevo Documento</a>
+
+        <table class="table fixed-table-container" style="margin-left: 1px; margin-right: 1px" background="fondo.gif" >
+            <thead>
+            <tr style="color:black; width: 20px">
+            
+                <td><b>Tipo</b></td>
+                <td><b>Numero</b></td>
+                <td><b>Fecha</b></td>
+                <td><b>Asunto</b></td>
+                <td><b>Asignado</b></td>
+                <td><b>Archivo</b></td>
+                <td><b>Observaciones</b></td>
+                <td><b>Estado</b></td>
+                <td>
+
+                </td>
+           
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Tipo</td>
+                    <td>@item.Numero</td>
+                    <td>@item.Fecha</td>
+                    <td>@item.Asunto</td>
+                    <td>@item.Asignado</td>
+                    <td>@item.Archivo</td>
+                    <td>@item.Observaciones</td>
+                    <td>
+                        @if (item.Estado == ESTADO.POR_ATENDER)
+                        {
+                            <span>Por Atender</span>
+                        }
+                        @if (item.Estado == ESTADO.EN_PROCESO)
+                        {
+                            <span>En Proceso</span>
+                        }
+                        @if (item.Estado == ESTADO.ATENDIDO)
+                        {
+                            <span>ATENDIDO</span>
+                        }
+                    </td>
+                    <td>
+                        @if (item.Estado == ESTADO.POR_ATENDER)
+                        {
+                            <a type="button" href="/documento/MarcarEnProceso?documentoId=@item.Id" class="btn btn-primary btn-sm">En Proceso</a>
+                        }
+                        @if (item.Estado == ESTADO.EN_PROCESO)
+                        {
+                            <a type="button" href="/documento/MarcarComoAtendido?documentoId=@item.Id" class="btn btn-success btn-sm">Atendido</a>
+                        }
+                    </td>    
+                    <td>
+                        <a type="button" href="/documento/edit?id=@item.Id" class="btn btn-warning btn-sm">Editar</a>
+                        <a type="button" href="/documento/delete?id=@item.Id" class="btn btn-danger btn-sm">Eliminar</a>
+                  
+                    </td>
+                </tr>
+            }
+            </tbody>
+        </table>
+        Unidad de Tecnologías de la Información y Comunicaciones Nacional del Perú - FRENPOL Cajamarca
+    </div>
 </div>

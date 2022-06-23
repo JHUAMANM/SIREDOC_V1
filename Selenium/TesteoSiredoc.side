@@ -50,7 +50,7 @@
         ["xpath=//input[@id='Nombre']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "SECRETARIA"
+      "value": "DEPSEEST"
     }, {
       "id": "aaf61eec-56f9-4380-b283-35e36477b621",
       "comment": "",
@@ -119,7 +119,13 @@
       "comment": "",
       "command": "assertElementPresent",
       "target": "id=UnidadesIndex",
-      "targets": [],
+      "targets": [
+        ["id=UnidadesIndex", "id"],
+        ["css=#UnidadesIndex", "css:finder"],
+        ["xpath=//h1[@id='UnidadesIndex']", "xpath:attributes"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Listado de Unidades Policiales')]", "xpath:innerText"]
+      ],
       "value": ""
     }]
   }, {
@@ -343,7 +349,7 @@
         ["xpath=//input[@id='Numero']", "xpath:attributes"],
         ["xpath=//input", "xpath:position"]
       ],
-      "value": "204-2022"
+      "value": "03-2022"
     }, {
       "id": "b70ff445-f170-4850-80f4-7acd562621b5",
       "comment": "",
@@ -554,7 +560,7 @@
         ["xpath=//select[@id='UnidadId']", "xpath:attributes"],
         ["xpath=//select", "xpath:position"]
       ],
-      "value": "UNITIC"
+      "value": "UPIAT"
     }, {
       "id": "4e526e32-a3c6-4c0c-ac80-51c160a21724",
       "comment": "",
@@ -1726,6 +1732,307 @@
         ["css=h2", "css:finder"],
         ["xpath=//h2", "xpath:position"],
         ["xpath=//h2[contains(.,'Nuevo Documento')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "720e9d30-8692-4f9d-b554-6c7ad4ec267f",
+    "name": "Crear Efectivo Policial Incorrecto",
+    "commands": [{
+      "id": "8b4900ce-6226-4ca9-a60b-12ecc9dc219c",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b846d9d-f440-4a28-9ab9-f4aadb0e5f83",
+      "comment": "",
+      "command": "click",
+      "target": "css=.navbar-light > strong",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "120995a5-8b57-411f-9dfb-bedc95519a99",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "782538f3-a129-483e-a189-127d6321cb38",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "dc841b5c-31f0-4553-9c06-9c0338ee094f",
+      "comment": "",
+      "command": "click",
+      "target": "css=path",
+      "targets": [
+        ["css=path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b9be59d4-ae23-48ea-a02b-7c9a324c773b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(3) strong",
+      "targets": [
+        ["css=.nav-item:nth-child(3) strong", "css:finder"],
+        ["xpath=//li[3]/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Efectivos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a89eb33-1801-4c7e-b442-5da844e94b91",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo Efectivo",
+      "targets": [
+        ["linkText=Nuevo Efectivo", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Efectivo')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/efectivopolicial/create')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Efectivo')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ccaee5f-a1e8-4504-aea2-d2ea6b99f70b",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e797b75d-444a-41c6-b116-42a07ffaa621",
+      "comment": "",
+      "command": "type",
+      "target": "id=Apellidos",
+      "targets": [
+        ["id=Apellidos", "id"],
+        ["name=Apellidos", "name"],
+        ["css=#Apellidos", "css:finder"],
+        ["xpath=//input[@id='Apellidos']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Cabanillas Chuquilin"
+    }, {
+      "id": "5ef90688-0ec7-4f78-b0c0-009155b83975",
+      "comment": "",
+      "command": "select",
+      "target": "id=UnidadId",
+      "targets": [
+        ["id=UnidadId", "id"],
+        ["name=UnidadId", "name"],
+        ["css=#UnidadId", "css:finder"],
+        ["xpath=//select[@id='UnidadId']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "UPIAT"
+    }, {
+      "id": "a2c031ea-81d4-44e4-8f6c-efc3b266dfb6",
+      "comment": "",
+      "command": "type",
+      "target": "id=Cip",
+      "targets": [
+        ["id=Cip", "id"],
+        ["name=Cip", "name"],
+        ["css=#Cip", "css:finder"],
+        ["xpath=//input[@id='Cip']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c3238cf-d2eb-4135-adfa-e96853902da2",
+      "comment": "",
+      "command": "type",
+      "target": "id=Telefono",
+      "targets": [
+        ["id=Telefono", "id"],
+        ["name=Telefono", "name"],
+        ["css=#Telefono", "css:finder"],
+        ["xpath=//input[@id='Telefono']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": "987456630"
+    }, {
+      "id": "4fd27c32-1501-4777-bb98-b7e1bfac4436",
+      "comment": "",
+      "command": "type",
+      "target": "id=Correo",
+      "targets": [
+        ["id=Correo", "id"],
+        ["name=Correo", "name"],
+        ["css=#Correo", "css:finder"],
+        ["xpath=//input[@id='Correo']", "xpath:attributes"],
+        ["xpath=//div[6]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c624b67d-6098-41a7-b1a7-5f16e846993b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4efa5b05-fe74-444f-b10b-d71b2bc830aa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Registro de Efectivos Policiales')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "635213b7-159d-4033-a09e-f4d4ecde59f6",
+    "name": "CrearUnidadCorrecta Incorrecto",
+    "commands": [{
+      "id": "e3a815f3-fef1-4bb1-a8a5-717a32d28238",
+      "comment": "",
+      "command": "open",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "243d8b87-8d2d-442e-a8bf-60b95a95eb9c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-item:nth-child(4) strong",
+      "targets": [
+        ["css=.nav-item:nth-child(4) strong", "css:finder"],
+        ["xpath=//li[4]/a/strong", "xpath:position"],
+        ["xpath=//strong[contains(.,'Unidades')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9992542d-7cc6-4f6d-b1f6-ca872f01d6e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nuevo Unidad",
+      "targets": [
+        ["linkText=Nuevo Unidad", "linkText"],
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Nuevo Unidad')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/unidadpolicial/create')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nuevo Unidad')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "983e1df6-20d2-445c-a8ad-8dfbd6edd0a3",
+      "comment": "",
+      "command": "type",
+      "target": "id=Nombre",
+      "targets": [
+        ["id=Nombre", "id"],
+        ["name=Nombre", "name"],
+        ["css=#Nombre", "css:finder"],
+        ["xpath=//input[@id='Nombre']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "68c05a46-1fa9-4a17-aa67-c12d7688499e",
+      "comment": "",
+      "command": "type",
+      "target": "id=Tipo",
+      "targets": [
+        ["id=Tipo", "id"],
+        ["name=Tipo", "name"],
+        ["css=#Tipo", "css:finder"],
+        ["xpath=//input[@id='Tipo']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "24667e09-b495-4c9d-8d9e-90b0964d1294",
+      "comment": "",
+      "command": "type",
+      "target": "id=Direccion",
+      "targets": [
+        ["id=Direccion", "id"],
+        ["name=Direccion", "name"],
+        ["css=#Direccion", "css:finder"],
+        ["xpath=//input[@id='Direccion']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5dda1c2-836d-417d-9b47-3b18ebf4f516",
+      "comment": "",
+      "command": "type",
+      "target": "id=Telefono",
+      "targets": [
+        ["id=Telefono", "id"],
+        ["name=Telefono", "name"],
+        ["css=#Telefono", "css:finder"],
+        ["xpath=//input[@id='Telefono']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb7879b8-a890-4a39-9d84-4ef39030e99c",
+      "comment": "",
+      "command": "type",
+      "target": "id=Correo",
+      "targets": [
+        ["id=Correo", "id"],
+        ["name=Correo", "name"],
+        ["css=#Correo", "css:finder"],
+        ["xpath=//input[@id='Correo']", "xpath:attributes"],
+        ["xpath=//div[5]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57c0c0f8-00bf-453e-a4a4-b4c36bb7e4ae",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-primary",
+      "targets": [
+        ["css=.btn-primary", "css:finder"],
+        ["xpath=//form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Guardar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0004668-d593-40d7-8d4c-bfc9a09a8a14",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Registro de Unidades')]", "xpath:innerText"]
       ],
       "value": ""
     }]

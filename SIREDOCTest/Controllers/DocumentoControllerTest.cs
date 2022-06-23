@@ -93,6 +93,41 @@ public class DocumentoControllerTest
     
     
     [Test]
+    public void postCrearError01()
+    {
+        
+        var mockClaimsPrincipal = new Mock<ClaimsPrincipal>();
+        // paso 7.- Configuramos el claims
+        mockClaimsPrincipal.Setup(o => o.Claims).Returns(new List<Claim> {new Claim(ClaimTypes.Name, "admin")});
+        
+        var mockContex = new Mock<HttpContext>();
+        mockContex.Setup(o => o.User).Returns(mockClaimsPrincipal.Object);
+
+        var mockDocumentoRepositorio = new Mock<IDocumentoRepositorio>();
+
+        var mockEfectivoRepo = new Mock<IEfectivoPolicialRepositorio>();
+        
+        var mockUsuarioRepo = new Mock<IUsuarioRepositorio>();
+        mockUsuarioRepo.Setup(o => o.ObtenerLoggedUser("admin")).Returns(new Usuario());
+       
+        var controller = new DocumentoController(mockEfectivoRepo.Object, mockDocumentoRepositorio.Object, mockUsuarioRepo.Object, null, null);
+         
+        controller.ControllerContext = new ControllerContext()
+        {
+            HttpContext = mockContex.Object
+        };
+        controller.ModelState.AddModelError("Campo", "El campo no puede ser vacio");
+        
+        var result = controller.Create(new Documento(){});
+        
+        
+        Assert.IsNotNull(result);
+        
+        Assert.IsInstanceOf<ViewResult>(result);
+    }
+    
+    
+    [Test]
     public void EditGetCaso01()
     {
         var mockEfectivoRepositorio = new Mock<IEfectivoPolicialRepositorio>();

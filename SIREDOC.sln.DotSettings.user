@@ -2,6 +2,25 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1ca1114c_002Dec28_002D46e6_002Daf1a_002D65f35206cefd/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PostTestCreateUnidadCaso01" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="D:\Proyectos Rider\SIREDOC\SIREDOCTest" Presentation="&amp;lt;SIREDOCTest&amp;gt;" /&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9cadea42_002D97d4_002D4589_002Da612_002Df7d2fd675816/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="All tests from &amp;lt;SIREDOCTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1cb8d008_002D8116_002D4f66_002D8ce6_002D7557e05f17dc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PostCrearViewCasoError01" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOCTest.Controllers.DocumentoControllerTest.PostCrearViewCasoError01&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOCTest.Controllers.DocumentoControllerTest.postCrearError01&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9cadea42_002D97d4_002D4589_002Da612_002Df7d2fd675816/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="All tests from &amp;lt;SIREDOCTest&amp;gt;" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;Project Location="D:\Proyectos Rider\SIREDOC\SIREDOCTest" Presentation="&amp;lt;SIREDOCTest&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=bfc2835e_002D867d_002D42d6_002D839e_002D6860ee401a56/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PostTestCreateCaso01" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOCTest.Controllers.EfectivoPolicialControllerTest.PostTestCreateCaso01&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e1b58db8_002D52b7_002D44ba_002Daced_002Ddcf1f268a0b4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="postCrearError01" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;Project Location="D:\Proyectos Rider\SIREDOC\SIREDOCTest" Presentation="&amp;lt;SIREDOCTest&amp;gt;" /&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e4c1446d_002Dfe68_002D4186_002D80e4_002De398da7a7521/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="PostTestCreateCaso01 #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::E285D296-2C24-4A06-9369-8D8A56C3DE1D::net6.0::SIREDOCTest.Controllers.EfectivoPolicialControllerTest.PostTestCreateCaso01&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

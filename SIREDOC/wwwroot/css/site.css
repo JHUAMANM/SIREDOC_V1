@@ -125,7 +125,7 @@ time {
 }
 
 .container-table{
-  width: 120%; 
+  width: 100%; 
   border-collapse: collapse;
   border: 4px solid darkslategray;
   text-align: left;
@@ -135,7 +135,7 @@ time {
 }
 
 .card{
-  position: relative;
+  position: relative;  
   display: flex;
   flex-direction: column;
   min-width: 0;
