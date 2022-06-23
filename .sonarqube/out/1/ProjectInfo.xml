@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
-  <ProjectName>SIREDOC</ProjectName>
+  <ProjectName>SIREDOCTest</ProjectName>
   <ProjectLanguage>C#</ProjectLanguage>
-  <ProjectType>Product</ProjectType>
-  <ProjectGuid>820bbb4e-84d5-4308-8711-739abe266c7c</ProjectGuid>
-  <FullPath>D:\Proyectos Rider\SIREDOC\SIREDOC\SIREDOC.csproj</FullPath>
+  <ProjectType>Test</ProjectType>
+  <ProjectGuid>e285d296-2c24-4a06-9369-8d8a56c3de1d</ProjectGuid>
+  <FullPath>D:\Proyectos Rider\SIREDOC\SIREDOCTest\SIREDOCTest.csproj</FullPath>
   <IsExcluded>false</IsExcluded>
   <AnalysisResults>
     <AnalysisResult Id="FilesToAnalyze" Location="D:\Proyectos Rider\SIREDOC\.sonarqube\conf\1\FilesToAnalyze.txt" />

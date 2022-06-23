@@ -32,10 +32,7 @@ D:\Proyectos Rider\SIREDOC\SIREDOC\Views\EfectivoPolicial\Create.cshtml
 D:\Proyectos Rider\SIREDOC\SIREDOC\Views\EfectivoPolicial\Delete.cshtml
 D:\Proyectos Rider\SIREDOC\SIREDOC\Views\EfectivoPolicial\Edit.cshtml
 D:\Proyectos Rider\SIREDOC\SIREDOC\Views\EfectivoPolicial\Index.cshtml
-D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Entidad\Create.cshtml
-D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Entidad\Delete.cshtml
-D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Entidad\Edit.cshtml
-D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Entidad\Index.cshtml
+D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Home\Contacto.cshtml
 D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Home\Index.cshtml
 D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Home\Privacy.cshtml
 D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Shared\Error.cshtml
@@ -134,7 +131,6 @@ D:\Proyectos Rider\SIREDOC\SIREDOC\wwwroot\lib\jquery\LICENSE.txt
 D:\Proyectos Rider\SIREDOC\SIREDOC\appsettings.Development.json
 D:\Proyectos Rider\SIREDOC\SIREDOC\appsettings.json
 D:\Proyectos Rider\SIREDOC\SIREDOC\Views\Shared\_Layout.cshtml.css
-D:\Proyectos Rider\SIREDOC\SIREDOC\Uploads\ACTA 01-2022.pdf
-D:\Proyectos Rider\SIREDOC\SIREDOC\Uploads\INFORME 03-2022.pdf
 D:\Proyectos Rider\SIREDOC\SIREDOC\Uploads\OFICIO 01-2022.pdf
+D:\Proyectos Rider\SIREDOC\SIREDOC\Uploads\OFICIO 02-2022.docx
 D:\Proyectos Rider\SIREDOC\SIREDOC\Properties\launchSettings.json

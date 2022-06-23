@@ -142,9 +142,7 @@ public class DocumentoController: Controller
    {
       
        string sourceFile = System.IO.Path.Combine("C:\\Users\\YoelitoHM\\Documents\\Archivos Escaneados", path);
-       
-      // string sourceFile = System.IO.Path.Combine(_environment.ContentRootPath, path);
-       
+
        string destinationFile = System.IO.Path.Combine(_environment.ContentRootPath, "Uploads", path);
 
        if (!System.IO.Directory.Exists("Uploads"))

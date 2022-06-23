@@ -34,7 +34,7 @@ public class UnidadPolicialController : Controller
     [HttpPost]
     public IActionResult Create(UnidadPolicial unidades)
     {
-        //var unidad = _dbEntities.UnidadPolicials.Where(o => o.Nombre == unidades.Nombre).Count();
+        
         var unidad = _unidadPolicialRepositorio.ContarPorNombre(unidades);
 
         if (unidad > 0)
